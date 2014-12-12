@@ -1,0 +1,117 @@
+<form id="apply" class="pure-form pure-form-stacked" name="vm.form" novalidate>
+  <div class="pure-g">
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.role.name}}" data-ng-hide="vm.form.role.$dirty && vm.form.role.$error.required" data-ng-bind="vm.inputs.role.label"></label>
+      <label for="{{vm.inputs.role.name}}" class="kw-error" data-ng-show="vm.form.role.$dirty && vm.form.role.$error.required" data-ng-bind="vm.inputs.role.validation.required"></label>
+      <select name="role" data-ng-model="vm.ticket.role" data-ng-options="item.value as item.label for item in vm.inputs.role.options.items" required>
+        <option value="" data-ng-bind="vm.inputs.role.options.default" selected></option>
+      </select>
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.state.name}}" data-ng-hide="vm.form.state.$dirty && vm.form.state.$error.required" data-ng-bind="vm.inputs.state.label"></label>
+      <label for="{{vm.inputs.state.name}}" class="kw-error" data-ng-show="vm.form.state.$dirty && vm.form.state.$error.required" data-ng-bind="vm.inputs.state.validation.required"></label>
+      <select name="state" data-ng-model="vm.ticket.state" data-ng-options="item.value as item.label for item in vm.inputs.state.options.items" required>
+        <option value="" data-ng-bind="vm.inputs.state.options.default" selected></option>
+      </select>
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.name.name}}" data-ng-hide="vm.form.name.$dirty && vm.form.name.$error.required" data-ng-bind="vm.inputs.name.label"></label>
+      <label for="{{vm.inputs.name.name}}" class="kw-error" data-ng-show="vm.form.name.$dirty && vm.form.name.$error.required" data-ng-bind="vm.inputs.name.validation.required"></label>
+      <input type="text" name="name" placeholder="{{vm.inputs.name.placeholder}}" data-ng-model="vm.ticket.name" required />
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.last.name}}" data-ng-hide="vm.form.last.$dirty && vm.form.last.$error.required" data-ng-bind="vm.inputs.last.label"></label>
+      <label for="{{vm.inputs.last.name}}" class="kw-error" data-ng-show="vm.form.last.$dirty && vm.form.last.$error.required" data-ng-bind="vm.inputs.last.validation.required"></label>
+      <input type="text" name="last" placeholder="{{vm.inputs.last.placeholder}}" data-ng-model="vm.ticket.last" required />
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.email.name}}" data-ng-hide="vm.form.email.$dirty && (vm.form.email.$error.required || vm.form.email.$error.email)" data-ng-bind="vm.inputs.email.label"></label>
+      <label for="{{vm.inputs.email.name}}" class="kw-error" data-ng-show="vm.form.email.$dirty && vm.form.email.$error.required" data-ng-bind="vm.inputs.email.validation.required"></label>
+      <label for="{{vm.inputs.email.name}}" class="kw-error" data-ng-show="vm.form.email.$dirty && vm.form.email.$error.email" data-ng-bind="vm.inputs.email.validation.invalid"></label>
+      <input type="email" name="email" placeholder="{{vm.inputs.email.placeholder}}" data-ng-model="vm.ticket.email" required />
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.mobile.name}}" data-ng-hide="vm.form.mobile.$dirty && (vm.form.mobile.$error.required || vm.form.mobile.$error.pattern || vm.form.mobile.$error.maxlength)" data-ng-bind="vm.inputs.mobile.label"></label>
+      <label for="{{vm.inputs.mobile.name}}" class="kw-error" data-ng-show="vm.form.mobile.$dirty && vm.form.mobile.$error.required" data-ng-bind="vm.inputs.mobile.validation.required"></label>
+      <label for="{{vm.inputs.mobile.name}}" class="kw-error" data-ng-show="vm.form.mobile.$dirty && (vm.form.mobile.$error.pattern || vm.form.mobile.$error.maxlength)" data-ng-bind="vm.inputs.mobile.validation.invalid"></label>
+      <input type="text" name="mobile" placeholder="{{vm.inputs.mobile.placeholder}}" maxlength="10" data-ng-model="vm.ticket.mobile" data-ng-pattern="/\d{10}/" data-ng-maxlength="10" required />
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.contact.name}}" data-ng-hide="vm.form.contact.$dirty && vm.form.contact.$error.required" data-ng-bind="vm.inputs.contact.label"></label>
+      <label for="{{vm.inputs.contact.name}}" class="kw-error" data-ng-show="vm.form.contact.$dirty && vm.form.contact.$error.required" data-ng-bind="vm.inputs.contact.validation.required"></label>
+      <select name="contact" data-ng-model="vm.ticket.contact" data-ng-options="item.value as item.label for item in vm.inputs.contact.options.items" required>
+        <option value="" data-ng-bind="vm.inputs.contact.options.default" selected></option>
+      </select>
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.education.name}}" data-ng-hide="vm.form.education.$dirty && vm.form.education.$error.required" data-ng-bind="vm.inputs.education.label"></label>
+      <label for="{{vm.inputs.education.name}}" class="kw-error" data-ng-show="vm.form.education.$dirty && vm.form.education.$error.required" data-ng-bind="vm.inputs.education.validation.required"></label>
+      <select name="education" data-ng-model="vm.ticket.education" data-ng-options="item.value as item.label for item in vm.inputs.education.options.items" required>
+        <option value="" data-ng-bind="vm.inputs.education.options.default" selected></option>
+      </select>
+    </div>
+    <div class="pure-u-1" data-ng-show="vm.ticket.education === 'Licenciatura' || vm.ticket.education === 'Maestría' || vm.ticket.education === 'Doctorado'">
+      <div>
+        <label for="{{vm.inputs.college.name}}" data-ng-hide="vm.form.college.$dirty && vm.form.college.$error.required" data-ng-bind="vm.inputs.college.label"></label>
+        <label for="{{vm.inputs.college.name}}" class="kw-error" data-ng-show="vm.form.college.$dirty && vm.form.college.$error.required" data-ng-bind="vm.inputs.college.validation.required"></label>
+        <input type="text" name="college" placeholder="{{vm.inputs.college.placeholder}}" data-ng-model="vm.ticket.college" data-ng-required="vm.ticket.education === 'Licenciatura' || vm.ticket.education === 'Maestría' || vm.ticket.education === 'Doctorado'" />
+      </div>
+      <div>
+        <label for="{{vm.inputs.collegeUrl.name}}" data-ng-hide="vm.form.collegeUrl.$dirty && (vm.form.collegeUrl.$error.required || vm.form.collegeUrl.$error.url)" data-ng-bind="vm.inputs.collegeUrl.label"></label>
+        <label for="{{vm.inputs.collegeUrl.name}}" class="kw-error" data-ng-show="vm.form.collegeUrl.$dirty && vm.form.collegeUrl.$error.required" data-ng-bind="vm.inputs.collegeUrl.validation.required"></label>
+        <label for="{{vm.inputs.collegeUrl.name}}" class="kw-error" data-ng-show="vm.form.collegeUrl.$dirty && vm.form.collegeUrl.$error.url" data-ng-bind="vm.inputs.collegeUrl.validation.url"></label>
+        <input type="url" name="collegeUrl" placeholder="{{vm.inputs.collegeUrl.placeholder}}" data-ng-model="vm.ticket.collegeUrl" data-ng-required="vm.ticket.education === 'Licenciatura' || vm.ticket.education === 'Maestría' || vm.ticket.education === 'Doctorado'" />
+      </div>
+    </div>
+    <div class="pure-u-1" data-ng-show="vm.ticket.education === 'Maestría' || vm.ticket.education === 'Doctorado'">
+      <div>
+        <label for="{{vm.inputs.masters.name}}" data-ng-hide="vm.form.masters.$dirty && vm.form.masters.$error.required" data-ng-bind="vm.inputs.masters.label"></label>
+        <label for="{{vm.inputs.masters.name}}" class="kw-error" data-ng-show="vm.form.masters.$dirty && vm.form.masters.$error.required" data-ng-bind="vm.inputs.masters.validation.required"></label>
+        <input type="text" name="masters" placeholder="{{vm.inputs.masters.placeholder}}" data-ng-model="vm.ticket.masters" data-ng-required="vm.ticket.education == 'Maestría' || vm.ticket.education === 'Doctorado'" />
+      </div>
+      <div>
+        <label for="{{vm.inputs.mastersUrl.name}}" data-ng-hide="vm.form.mastersUrl.$dirty && (vm.form.mastersUrl.$error.required || vm.form.mastersUrl.$error.url)" data-ng-bind="vm.inputs.mastersUrl.label"></label>
+        <label for="{{vm.inputs.mastersUrl.name}}" class="kw-error" data-ng-show="vm.form.mastersUrl.$dirty && vm.form.mastersUrl.$error.required" data-ng-bind="vm.inputs.mastersUrl.validation.required"></label>
+        <label for="{{vm.inputs.mastersUrl.name}}" class="kw-error" data-ng-show="vm.form.mastersUrl.$dirty && vm.form.mastersUrl.$error.url" data-ng-bind="vm.inputs.mastersUrl.validation.url"></label>
+        <input type="url" name="mastersUrl" placeholder="{{vm.inputs.mastersUrl.placeholder}}" data-ng-model="vm.ticket.mastersUrl" data-ng-required="vm.ticket.education === 'Maestría' || vm.ticket.education === 'Doctorado'" />
+      </div>
+    </div>
+    <div class="pure-u-1" data-ng-show="vm.ticket.education == 'Doctorado'">
+      <div>
+        <label for="{{vm.inputs.phd.name}}" data-ng-hide="vm.form.phd.$dirty && vm.form.phd.$error.required" data-ng-bind="vm.inputs.phd.label"></label>
+        <label for="{{vm.inputs.phd.name}}" class="kw-error" data-ng-show="vm.form.phd.$dirty && vm.form.phd.$error.required" data-ng-bind="vm.inputs.phd.validation.required"></label>
+        <input type="text" name="phd" placeholder="{{vm.inputs.phd.placeholder}}" data-ng-model="vm.ticket.phd" data-ng-required="vm.ticket.education === 'Doctorado'" />
+      </div>
+      <div>
+        <label for="{{vm.inputs.phdUrl.name}}" data-ng-hide="vm.form.phdUrl.$dirty && (vm.form.phdUrl.$error.required || vm.form.phdUrl.$error.url)" data-ng-bind="vm.inputs.phdUrl.label"></label>
+        <label for="{{vm.inputs.phdUrl.name}}" class="kw-error" data-ng-show="vm.form.phdUrl.$dirty && vm.form.phdUrl.$error.required" data-ng-bind="vm.inputs.phdUrl.validation.required"></label>
+        <label for="{{vm.inputs.phdUrl.name}}" class="kw-error" data-ng-show="vm.form.phdUrl.$dirty && vm.form.phdUrl.$error.url" data-ng-bind="vm.inputs.phdUrl.validation.url"></label>
+        <input type="url" name="phdUrl" placeholder="{{vm.inputs.phdUrl.placeholder}}" data-ng-model="vm.ticket.phdUrl" data-ng-required="vm.ticket.education === 'Doctorado'" />
+      </div>
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.experience.name}}" data-ng-hide="vm.form.experience.$dirty && (vm.form.experience.$error.required || vm.form.experience.$error.pattern || vm.form.experience.$error.maxlength)" data-ng-bind="vm.inputs.experience.label"></label>
+      <label for="{{vm.inputs.experience.name}}" class="kw-error" data-ng-show="vm.form.experience.$dirty && vm.form.experience.$error.required" data-ng-bind="vm.inputs.experience.validation.required"></label>
+      <label for="{{vm.inputs.experience.name}}" class="kw-error" data-ng-show="vm.form.experience.$dirty && (vm.form.experience.$error.pattern || vm.form.experience.$error.maxlength)" data-ng-bind="vm.inputs.experience.validation.invalid"></label>
+      <input type="text" name="experience" placeholder="{{vm.inputs.experience.placeholder}}" maxlength="2" data-ng-model="vm.ticket.experience" data-ng-maxlength="2"  data-ng-pattern="/\d{1,2}/" required />
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.resume.name}}" class="kw-error" data-ng-show="vm.file.dirty && vm.file.invalid" data-ng-bind="vm.inputs.resume.validation.invalid"></label>
+      <label for="{{vm.inputs.resume.name}}" data-ng-hide="vm.file.dirty && vm.file.invalid" data-ng-bind="vm.inputs.resume.label"></label>
+      <div class="kw-button-group">
+        <button type="file" class="pure-button" ng-file-select ng-file-model="vm.ticket.resume" ng-file-change="vm.fileSelected($files, $event)" accept="*.pdf" data-ng-bind="vm.inputs.select.label"></button>
+        <p data-ng-show="vm.ticket.resume" data-ng-bind="vm.ticket.resume.name"></p>
+      </div>
+    </div>
+    <div class="pure-u-1">
+      <label for="{{vm.inputs.message.name}}" data-ng-hide="vm.form.message.$dirty && vm.form.message.$error.required" data-ng-bind="vm.inputs.message.label"></label>
+      <label for="{{vm.inputs.message.name}}" class="kw-error" data-ng-show="vm.form.message.$dirty && vm.form.message.$error.required" data-ng-bind="vm.inputs.message.validation.required"></label>
+      <textarea name="message" placeholder="{{vm.inputs.message.placeholder}}" rows=5 data-ng-model="vm.ticket.message" required></textarea>
+    </div>
+    <div class="pure-u-1">
+      <div class="kw-button-group">
+        <button class="pure-button" type="submit" data-ng-class="{'pure-button-disabled': vm.form.$invalid || vm.file.invalid}"data-ng-disabled="vm.form.$invalid || vm.file.invalid"  data-ng-bind="vm.inputs.submit.label" data-ng-click="vm.submit(vm.ticket)"></button>
+      </div>
+    </div>
+  </div>
+</form>

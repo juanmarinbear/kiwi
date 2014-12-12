@@ -1,0 +1,26 @@
+/* TEAM */
+
+Lead Engineer: Juan Marin
+Site: juan [at] codecery.com
+Twitter: @juanmarinbear
+Location: Mexico City
+
+Software Engineer: Carlos Canizal 
+Site: carlos [at] codecery.com
+Location: Mexico City
+
+UI/UX: Dulce Carral
+Site: maria [at] codecery.com
+Location: Tabasco
+
+/* THANKS */
+
+StackOverflow: http://www.stackoverflow.com 
+Reddit: http://www.reddit.com/r/angularjs
+
+/* SITE */
+
+Last Update: 2014/12/08
+Standards: HTML5, CSS3
+Components: PureCSS, AngularJS, Parse.com
+Software: VIM

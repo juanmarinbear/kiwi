@@ -1,0 +1,15 @@
+<div class="pure-g">
+  <div class="pure-u-1">
+    <h1 id="{{ vm.text.anchor }}" data-ng-bind="vm.text.title"></h1>
+  </div>
+  <div class="pure-u-1 kw-index">
+    <h2 data-ng-repeat="content in vm.text.tableOfContents"><a href="{{ content.href }}" data-ng-bind="content.title" data-ng-click="vm.scroll(content.anchor)"></a></h2>
+  </div>
+  <div class="pure-u-1" data-ng-repeat="section in vm.text.sections">
+    <h2 id="{{ section.anchor }}" data-ng-bind="section.title"></h2>
+    <div data-ng-repeat="question in section.questions">
+      <p><strong><span data-ng-bind="question.question"></span></strong></p>
+      <p data-ng-repeat="answer in question.answer" data-ng-bind-html="answer"></p>
+    </div>
+  </div>
+</div>

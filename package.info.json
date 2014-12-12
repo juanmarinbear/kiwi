@@ -1,0 +1,44 @@
+{
+  "name": "kiw",
+  "version": "1.0.0",
+  "description": "Simple Angular / Parse CRUD App",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan Marin",
+  "license": "MIT",
+  "devDependencies": {
+    "chalk": "^0.5.1", // Paints notifications
+    "critical": "^0.5.0", // Optimizes above the fold content delivery
+    "del": "^0.1.3", // Deletes files
+    "glob": "^4.1.3", // File matching using shell patterns
+    "gulp": "^3.8.10", // Task runner
+    "gulp-angular-templatecache": "^1.4.2", // Creates JS Templates from HTML files and injects into $templateCache
+    "gulp-autoprefixer": "^2.0.0", // Adds browser prefixes to CSS
+    "gulp-bytediff": "^0.2.0", // Compares before and after file size
+    "gulp-cache": "^0.2.4", // Creates a cache to speed up builds
+    "gulp-concat": "^2.4.1", // Concatenates files
+    "gulp-filter": "^1.0.2", // Filters files inside a stream
+    "gulp-imagemin": "^2.0.0", // Minimizes images
+    "gulp-inject": "^1.0.2", // Injects content in files
+    "gulp-jscs": "^1.3.0", // JavaScript Style guide
+    "gulp-jshint": "^1.9.0", // JavaScript Syntax
+    "gulp-load-plugins": "^0.7.1", // Loads Gulp plugins automatically
+    "gulp-load-utils": "0.0.4", // Conveniently wrapped utility functions for working with gulp 
+    "gulp-minify-css": "^0.3.11", // Minifies CSS
+    "gulp-minify-html": "^0.1.6", // Minifies HTML
+    "gulp-ng-annotate": "^0.3.5", // Prevents uglify from breaking Angular's dependency injection
+    "gulp-notify": "^2.0.1", // Notifies messages
+    "gulp-rename": "^1.2.0", // Renames files
+    "gulp-rev": "^2.0.1", // Creates revised files for cache busting
+    "gulp-rev-replace": "^0.3.1", // Finds non revised files and replaces it with revised version
+    "gulp-sourcemaps": "^1.2.8", // Creates source maps
+    "gulp-task-listing": "^0.3.0", // Lists available tasks
+    "gulp-uglify": "^1.0.1", // Uglifies Java Script
+    "gulp-util": "^3.0.1", // Utility functions for gulp plugins
+    "jshint-stylish": "^1.0.0", // Styles JSHINT output
+    "merge-stream": "^0.1.6", // Merge streams HAHAHA
+    "minimist": "^1.1.0", // Parse argument options 
+    "plato": "^1.2.2" // Analyzes JavaScript
+  }
+}

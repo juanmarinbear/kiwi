@@ -1,0 +1,55 @@
+{
+  "title" : "Nosotros",
+  "sections" : [
+    {
+      "title" : "¡Hola!",
+      "subtitle" : "Somos Kiwi Networks",
+      "icon" : "ion-kiwi",
+      "paragraphs" : [
+        "Una empresa de telecomunicaciones.",
+        "¿Otra más? ¡Sí! Pero somos diferentes.",
+        "Nos enfocamos a empresas en crecimiento como la tuya.  Queremos que uses lo último en Information Technology (IT) como VoIP, infraestructura y plataformas como servicio (IaaS y PaaS), video vigilancia y virtualización.",
+        "Primero, requieres más Bandwidth (ancho de banda) de lo que te ofrecen los demás.  Pero no sólo es descargar más rápido,es importante subir información más rápido, tener baja latencia y perdida de paquetes (calidad)."
+      ]
+    },
+    {
+      "title" : "Velocidad y Calidad",
+      "subtitle" : "Superando las necesidades de tus aplicaciones",
+      "icon" : "ion-speedometer",
+      "paragraphs" : [
+        "Kiwi Networks usa lo último en fibra óptica y microondas para darte servicios desde 4 Mbps hasta 10 Gbps simétricos (es decir, misma velocidad de subida que descarga).",
+        "Cuando lo requieras, puedes incrementar o disminuir tu velocidad (escalable).  Con cada servicio, te damos 8 IPs públicas y estáticas para aplicaciones como servidores o cámaras de video vigilancia.",
+        "Finalmente, desde nuestro portal, puedes ver el status de tu servicio.  Cuanto datos transferiste, velocidad, desconexiones, reportar fallas, pagar y facturar."
+      ]
+    },
+    {
+      "title" : "Servicio excepcional",
+      "subtitle" : "Tu eres lo más importante",
+      "icon" : "ion-happy",
+      "paragraphs" : [
+        "¿Todavía no te convences?",
+        "¿Y si te decimos que no te cobramos instalación ni obligamos a un plan forzoso?",
+        "Esto no lo dan otros proveedores porque ven a cada cliente como un riesgo por mitigar y un ingreso que optimizar.  Kiwi Networks te ve como una inversión.  Queremos que crezcas y nos permitas crecer contigo.  No tememos invertir en ti.  Sabemos que con la calidad de nuestro servicio, estarás con nosotros siempre.",
+        "Y si no podemos darte el servicio que esperas.  No debes seguir con nosotros.  No es necesario un plan forzoso ni una penalización por cancelación.  Queremos que seas nuestro cliente por convicción, no por contrato.",
+        "Finalmente, en todos nuestros servicios, tu tienes la última palabra sobre tu factura.  Si no estás satisfecho por cualquier razón, nos dices lo que no te gustó, y pagas lo que creas justo.  Así de fácil."
+      ] 
+    },
+    {
+      "title" : "Ecológico y moderno",
+      "subtitle" : "Rompiendo paradigmas de trabajo",
+      "icon" : "ion-leaf",
+      "paragraphs" : [
+        "Otros proveedores usan fibra o cobre aéreo y dejan tendederos de cables que no sólo contaminen visualmente, también son inseguros.  Kiwi Networks usa fibra 100% subterránea.",
+        "Nuestros enlaces de microondas usan lo último en wireless para minimizar interferencia, dar alta velocidad, baja latencia y no contaminan la imagen de tu comunidad.",
+        "Usamos una flotilla de baja emisión de CO2.  Nuestros contratos y facturas son digitales.  Instalamos molinos eólicos y celdas solares en algunas de nuestras acometidas para usar energía renovable.",
+        "Nuestra meta es que toda la energía que usamos sea renovable."
+      ] 
+    },
+    {
+      "title" : "¡Gracias!",
+      "subtitle" : "Agradecemos tu interés en Kiwi Networks y esperamos ganar la oportunidad de servirte.",
+      "icon" : "",
+      "paragrpahs" : [] 
+    }
+  ]
+}

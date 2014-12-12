@@ -1,0 +1,18 @@
+{
+  "title" : "Kiwi Networks",
+  "headers" : [
+    "INTERNET DE BANDA ANCHA",
+    "Sin plan forzoso ni costo de instalación",
+    "Desde 50 Mbps por $580 / mes"
+  ],
+  "buttons" : [
+    {
+      "title" : "Conoce Más",
+      "href" : "/#/services"
+    }, 
+    {
+      "title" : "Contrata",
+      "href" : "/#/sales/"
+    } 
+  ]
+}

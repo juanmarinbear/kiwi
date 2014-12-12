@@ -1,0 +1,34 @@
+{
+  "title" : "Business",
+  "icon" : "ion-briefcase",
+  "paragraphs" : [
+    "Sin plan forzoso ni costo de instalación",
+    "Cancela sin penalización",
+    "Velocidad simétrica",
+    "Servicio best effort",
+    "Hasta 8 IPs públicas estáticas",
+    "20 Mbps a 1 Gbps (depende ubicación)"
+  ],
+  "pricing" : [
+    {
+      "title" : "On-Net",
+      "description" : "Edificios en red Kiwi Networks",
+      "price" : "$1,160 / mes"
+    },
+    {
+      "title" : "Off-Net",
+      "description" : "Fuera de red Kiwi Networks",
+      "price" : "$2,320 / mes"
+    }
+  ],
+  "buttons" : [
+    {
+      "title" : "¿Dudas?",
+      "href" : "/#/faq#business"
+    }, 
+    {
+      "title" : "Contrata",
+      "href" : "/#/sales/business"
+    } 
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "title" : "Aplicación",
+  "paragraphs" : [
+    "Con esta forma puedes aplicar a alguna de nuestras vacantes.",
+    "En cuanto la llenes, te contactaremos para informarte los siguientes pasos.",
+    "Necesitaras tu Curriculum en PDF.",
+    "Tus datos están seguros, no los compartimos con terceros, ni te enviaremos correos que no solicitaste (Marketing, comunicados, etc...).",
+    "Únicamente usaremos tus datos para dar seguimiento al asunto por el que nos contactaste.",
+    "Para conocer más sobre nuestras políticas de privacidad, <a href='/#/privacy' target='_blank'>da click aquí</a>."
+  ],
+  "messages": {
+    "success": {
+      "title": "Solicitud Exitosa",
+      "paragraphs": [
+        "Recibimos tu solicitud.",
+        "Un representante de Kiwi Networks te contactará dentro de los próximos 15 minutos en horario laboral (L a V, 8:00 a 18:00) o temprano el siguiente día hábil.",
+        "Si esto no sucede, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+      ]
+    },
+    "error": {
+      "title": "Error",
+      "paragraphs": [
+        "Ocurrió un error.",
+        "Te pedimos intentes nuevamente.",
+        "Si el problema persiste, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+      ]
+    }
+  }
+}

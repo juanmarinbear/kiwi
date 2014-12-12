@@ -1,0 +1,56 @@
+{
+  "title" : "Dedicated",
+  "icon" : "ion-jet",
+  "paragraphs" : [
+    "Sin plan forzoso ni costo de instalación",
+    "Cancela sin penalización",
+    "Velocidad simétrica",
+    "Hasta 8 IPs públicas estáticas",
+    "4 Mbps a 10 Gbps",
+    "Servicio Business sin costo adicional",
+    "SLA 99.95%",
+    "Si no estas satisfecho, dinos porqué y paga lo que creas justo (Short Pay)"
+  ],
+  "pricing" : [
+    {
+      "title" : "D4",
+      "description" : "4 Mbps / 4 Mbps",
+      "price" : "$5,800 / mes"
+    },
+    {
+      "title" : "D10",
+      "description" : "10 Mbps / 10 Mbps",
+      "price" : "$11,600 / mes"
+    },
+    {
+      "title" : "D20",
+      "description" : "20 Mbps / 20 Mbps",
+      "price" : "$20,880 / mes"
+    },
+    {
+      "title" : "D50",
+      "description" : "50 Mbps / 50 Mbps",
+      "price" : "$41,760 / mes"
+    },
+    {
+      "title" : "D100",
+      "description" : "100 Mbps / 100 Mbps",
+      "price" : "$68,440 / mes"
+    },
+    {
+      "title" : "DOD (Dedicated On Demand)",
+      "description" : "Desde 250 Mbps hasta 10 Gbps",
+      "price" : "Depende ubicación"
+    }
+  ],
+  "buttons" : [
+    {
+      "title" : "¿Dudas?",
+      "href" : "/#/faq#dedicated"
+    }, 
+    {
+      "title" : "Contrata",
+      "href" : "/#/sales/dedicated"
+    } 
+  ]
+}

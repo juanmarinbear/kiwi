@@ -1,0 +1,25 @@
+{
+  "title" : "Unsubscribe",
+    "paragraphs" : [
+      "Llena esta forma para cambiar tus preferencias de comunicación.",
+      "Si seleccionas la última opción, eliminaremos toda información relacionada a tu nombre, email o móvil de nuestra base de datos.  Si todavía eres nuestro cliente, cancela tu(s) servicio(s) para que esta acción tenga efecto.  No podemos eliminar información que por caracter legal o fiscal debamos conservar como contratos, facturas, transacciones etc..."
+  ],
+  "messages": {
+    "success": {
+      "title": "Solicitud Exitosa",
+      "paragraphs": [
+        "Recibimos tu solicitud.",
+        "Un representante de Kiwi Networks te contactará dentro de los próximos 15 minutos en horario laboral (L a V, 8:00 a 18:00) o temprano el siguiente día hábil.",
+        "Si esto no sucede, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+      ]
+    },
+    "error": {
+      "title": "Error",
+      "paragraphs": [
+        "Ocurrió un error.",
+        "Te pedimos intentes nuevamente.",
+        "Si el problema persiste, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+      ]
+    }
+  }
+}

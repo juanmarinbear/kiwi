@@ -1,0 +1,344 @@
+{
+  "title": "Preguntas Frecuentes",
+  "anchor": "top",
+  "tableOfContents": [
+    {
+      "title": "General",
+      "href": "/#/faq#general",
+      "anchor": "general"
+    },
+    {
+      "title": "Residential",
+      "href": "/#/faq#residential",
+      "anchor": "residential"
+    },
+    {
+      "title": "Business",
+      "href": "/#/faq#business",
+      "anchor": "business"
+    },
+    {
+      "title": "Dedicated",
+      "href": "/#/faq#dedicated",
+      "anchor": "dedicated"
+    },
+    {
+      "title": "Metro Mesh",
+      "href": "/#/faq#metromesh",
+      "anchor": "metromesh"
+    }
+  ],
+  "sections": [
+    {
+      "title": "General",
+      "anchor": "general",
+      "questions": [
+        {
+          "question": "¿Cómo contrato?",
+          "answer": [
+            "<a href='/#/sales/' target='_blank'>Llena esta forma.</a>"
+          ]
+        },
+        {
+          "question": "¿Cuánto tardan en instalar?",
+          "answer": [
+            "Para edificios y ubicaciones fuera de la red Kiwi Networks, teniendo todos los permisos y facilidades necesarias, 6 semanas para fibra óptica y una semana para microondas.",
+            "Para edificios en la red Kiwi Networks, el mismo día si contratas antes de las 12:00 o el día siguiente cuando contratas después de las 12:00."
+          ]
+        },
+        {
+          "question": "¿Por que tardan 6 semanas para fibra óptica cuando proveedor X tarda menos?",
+          "answer": [
+            "Porque a diferencia de proveedor X, nuestra fibra óptica es 100% subterránea y aunque es más tardado instalarla, es más confiable."
+          ]
+        },
+        {
+          "question": "¿Cuál es la diferencia entre fibra óptica y microondas?",
+          "answer": [
+            "Microondas tiene más latencia que fibra óptica pero la diferencia no es significativa. Microondas tiene menos capacidad (hasta 500 Mbps) que fibra óptica (hasta 10 Gbps)."
+          ]
+        },
+        {
+          "question": "¿Hay plan forzoso?",
+          "answer": [
+            "No."
+          ]
+        },
+        {
+          "question": "¿Hay algún costo de instalación?",
+          "answer": [
+            "No."
+          ]
+        },
+        {
+          "question": "¿Cómo entregan el servicio?",
+          "answer": [
+            "Cableamos con CAT6 (Hasta 1 Gbps) de nuestra acometida a tu departamento u oficina y te entregamos un router de alta velocidad."
+          ]
+        },
+        {
+          "question": "¿Qué especificaciones tiene el router que me entregan?",
+          "answer": [
+            "<a href='/media/docs/UniFi_Security_Gateway_DS.pdf' target='_blank'>Estas.</a>"
+          ]
+        },
+        {
+          "question": "¿Tiene algún costo el router?",
+          "answer": [
+            "No."
+          ]
+        },
+        {
+          "question": "¿Puedo usar mi router en lugar del suyo?",
+          "answer": [
+            "Si, siempre y cuando lo conectes al nuestro.  Así podemos diagnosticar cualquier problema con tu red."
+          ]
+        },
+        {
+          "question": "Su router no es inalámbrico y quiero WiFi.",
+          "answer": [
+            "Entonces, sin costo y junto con el router anterior, te entregamos <a href='http://www.asus.com/us/Networking/RTN66U/' target='_blank'>uno de estos.</a>"
+          ]
+        },
+        {
+          "question": "¿Pueden configurar mi red?",
+          "answer": [
+            "Lo único que configuramos es tu contraseña."
+          ]
+        },
+        {
+          "question": "¿Cómo cancelo?",
+          "answer": [
+            "Entra al <a href='/#/dashboard/anon' target='_blank'>Dashboard</a>, selecciona la pestaña de \"Cancelar\" y llena la forma."
+          ]
+        },
+        {
+          "question": "¿Qué es un servicio simétrico?",
+          "answer": [
+            "Simétrico quiere decir misma velocidad de descarga que subida. Otros proveedores publican su velocidad de descarga pero no la de subida (porque generalmente es menor). Para servicios de VoIP (Como Skype), video vigilancia por IP, streaming, backup (Dropbox y GDrive) y escritorios remotos, es muy importante la velocidad de subida."
+          ]
+        },
+        {
+          "question": "¿Por qué cuando hago una prueba de velocidad, no muestra la velocidad que estoy contratando?",
+          "answer": [
+            "Los dos sitios más populares de pruebas de velocidad son: <a href='http://www.speedtest.net/' target='_blank'>Speedtest.net</a> y <a href='http://www.speakeasy.net/speedtest/' target='_blank'>Speakeasy.net </a>. En cualquiera de los dos, haz varias pruebas con diferentes servidores. Notarás que no consigues los mismos resultados. Esto sucede porque las pruebas de velocidad dependen de varios factores:",
+            "¿Estás conectado con cable CAT6 (Hasta 1Gbps), CAT5 (Hasta 100Mbps) o WiFi (Desde 54Mbps hasta 1.75Gbps) a tu router?",
+            "En caso de WiFi, ¿Tienes buena <a href='http://en.wikipedia.org/wiki/Signal_strength' target='_blank'>calidad de señal</a>?",
+            "¿Eres el único en la red, o hay más usuarios?",
+            "¿Hasta qué velocidad soporta el servidor donde haces tu prueba (hay servidores que no soportan más de 5 Mbps)?",
+            "¿Hay algún servidor intermedio de menor velocidad?",
+            "Una red es tan rápida como su dispositivo más lento. Si de tu computadora a tu router te conectas a 100 Mbps, pero contratas 20 Mbps, el limitante de tu red son 20 Mbps de tu proveedor. Si de tu computadora a tu router te conectas por WiFi a 20 Mbps, y contratas 100 Mbps, el limitante de tu red son 20 Mbps de tu conexión WiFi. Finalmente, si de tu computadora a tu router te conectas por CAT6 a 1 Gbps, y contratas 1 Gbps, pero el servidor con el que haces la prueba está limitado a 20 Mbps, el limitante son 20Mbps del servidor."
+          ]
+        },
+        {
+          "question": "¿Qué es best effort?",
+          "answer": [
+            "En servicios Residential y Business, compartes un enlace con varios usuarios.  Te daremos la mayor velocidad que podamos (best effort) pero dependerá de la saturación de la red.  Para velocidad garantizada, contrata un servicio Dedicated."
+          ]
+        },
+        {
+          "question": "¿Cómo comparo Kiwi Networks con otros proveedores?",
+          "answer": [
+            "Busca lo siguiente:",
+            "¿Su servicio es simétrico (misma velocidad de descarga que subida)?",
+            "¿Te cobran instalación?",
+            "¿Su servicio tiene plan forzoso?",
+            "¿Puedes cancelar sin penalizaciones?",
+            "¿Te entregan IPs públicas estáticas? ¿Cuántas?",
+            "¿Qué características tiene el router que te entregan?"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Residencial",
+      "anchor": "residential",
+      "questions": [
+        {
+          "question": "¿Qué necesito para contratar?",
+          "answer": [
+            "Vivir en un edificio con Kiwi Networks instalado."
+          ]
+        },
+        {
+          "question": "¿Y si no vivo en un edificio con Kiwi Networks instalado?",
+          "answer": [
+            "Conseguir a 5 vecinos que quieran el servicio y darnos el contacto de la administración de tu edificio.  <a href='/#/builtin' target='_blank'>Usa esta forma para hacerlo</a>.  Por cierto, si consigues 5 vecinos, tu servicio es gratis."
+          ]
+        },
+        {
+          "question": "¿Puedo contratar para casa?",
+          "answer": [
+            "No."
+          ]
+        },
+        {
+          "question": "¿Qué velocidad tiene su servicio?",
+          "answer": [
+            "Dependiendo del tamaño y ubicación de tu edificio, instalamos enlaces de 50 Mbps, 100 Mbps, 500 Mbps o 1 Gbps. Para ver la máxima velocidad, necesitas una tarjeta Gigabit y conectarte por cable CAT6 a tu router."
+          ]
+        },
+        {
+          "question": "¿Cuál es el costo del servicio?",
+          "answer": [
+            "$580 / mes."
+          ]
+        },
+        {
+          "question": "¿Perdí, dañe, mi perro se comió el router?",
+          "answer": [
+            "Cada uno de los routers que te entregamos cuesta $1,740.  Si los dañas, deberás cubrir su reemplazo.  <a>Está en tu contrato</a>."
+          ]
+        },
+        {
+          "question": "¿Ofrecen telefonía o video?",
+          "answer": [
+            "No."
+          ]
+        },
+        {
+          "question": "¿Por qué no ofrecen telefonía?",
+          "answer": [
+            "Porque todos te llaman a tu móvil, envían un Email o escriben por SMS, <a href='http://www.whatsapp.com/' target='_blank'>WhatsApp</a>, <a href='http://line.me/en/' target='_blank'>Line</a>, <a href='http://kik.com/' target='_blank'>Kik</a> o similares. Los únicos que llaman a tu casa son los bancos para ofrecerte cosas que no necesitas."
+          ]
+        },
+        {
+          "question": "¿Por qué no ofrecen video?",
+          "answer": [
+            "Porque puedes ver tu series y películas favoritas en <a href='https://www.netflix.com/' target='_blank'>Netflix</a>, en idioma original con subtítulos (no se tu, pero odiamos los doblajes). Y si quieres ver deportes, ve a un restaurante o bar con tus amigos.  Sal de casa."
+          ]
+        },
+        {
+          "question": "¿Me dan computadora, televisión o iPad con cargo a mi recibo Kiwi?",
+          "answer": [
+            "No somos Carlos Slim para andar financiando a medio México.  Si quieres un gadget nuevo, cómpralo de contado o a meses con tu tarjeta de crédito."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Business",
+      "anchor": "business",
+      "questions": [
+        {
+          "question": "¿Cuál es la diferencia entre On-Net y Off-Net?",
+          "answer": [
+            "On-Net son edificios conectados a la red Kiwi Networks.  Off-Net son edificios o ubicaciones sin conexión a la red Kiwi Networks."
+          ]
+        },
+        {
+          "question": "¿Instalan solo en edificios?",
+          "answer": [
+            "No. También podemos instalar en locales, fábricas o donde esté tu negocio."
+          ]
+        },
+        {
+          "question": "¿Qué velocidad tiene su servicio?",
+          "answer": [
+            "Dependiendo el tamaño y ubicación de tu edificio o local, instalamos enlaces de 20 Mbps, 50 Mbps, 100 Mbps, 500 Mbps o 1 Gbps. Para ver la máxima velocidad, necesitas una tarjeta Gigabit y conectarte por cable CAT6 a tu router."
+          ]
+        },
+        {
+          "question": "¿Pero…?",
+          "answer": [
+            "La velocidad mínima que verás es de 20 Mbps."
+          ]
+        },
+        {
+          "question": "¿Cuál es el costo del servicio?",
+          "answer": [
+            "$1,160 / mes. On-Net y $2,320 / mes. Off-Net."
+          ]
+        },
+        {
+          "question": "¿Ofrecen telefonía?",
+          "answer": [
+            "No."
+          ]
+        },
+        {
+          "question": "¿Por qué no ofrecen telefonía?",
+          "answer": [
+            "Porque integraciones de VoIP a tu medida te dan más flexibilidad y menor costo que cualquier cosa que podamos ofrecerte. Lo que sí hacemos, es ayudarte a seleccionar tecnologías y proveedores de VoIP que cumplan con tus necesidades."
+          ]
+        },
+        {
+          "question": "¿Para qué sirve una IP pública estática?",
+          "answer": [
+            "Si vas a instalar un servidor, cámaras IP, o cualquier servicio que requiera que la IP siempre sea la misma, necesitas una IP pública estática."
+          ]
+        },
+        {
+          "question": "¿Puedo contratar más de 8 IP’s estáticas?",
+          "answer": [
+            "Si. Siempre y cuando justifiques su uso. Desafortunadamente ya no quedan muchas IPs IPV4 por lo que tenemos que racionarlas."
+          ]
+        },
+        {
+          "question": "¿Para qué me sirve su router?",
+          "answer": [
+            "Para ver estadisticas de uso y conectividad."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dedicated",
+      "anchor": "dedicated",
+      "questions": [
+        {
+          "question": "¿Cuál es la diferencia entre Business y Dedicated?",
+          "answer": [
+            "A diferencia de Business, Dedicated tiene:",
+            "Velocidad garantizada y sin fluctuaciones.",
+            "Menor latencia.",
+            "Redundancia con dos proveedores externos.",
+            "Recomendamos Dedicated para aplicaciones críticas como VoIP, ERPs, Web Servers, Mail Servers que requieren SLA (Service Level Agreement)."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Metro Mesh",
+      "anchor": "metromesh",
+      "questions": [
+        {
+          "question": "¿Qué es Metro Mesh?",
+          "answer": [
+            "Un servicio para integradores o empresas con sucursales que quieren administrar una sola red."
+          ]
+        },
+        {
+          "question": "¿Cómo funciona Metro Mesh?",
+          "answer": [
+            "Contratas un servicio Dedicated en un sitio (principal) y nodos para otros sitios.  Puedes distribuir el ancho de banda en tu sitio principal a tus nodos como quieras."
+          ]
+        },
+        {
+          "question": "¿Qué puedo hacer con Metro Mesh?",
+          "answer": [
+            "Integrar varias sucursales a una red. Crear un VPN entre diferentes ubicaciones para más seguridad. Ahorrar cuando necesitas servicios dedicados en diferentes sitios."
+          ]
+        },
+        {
+          "question": "¿Hay alguna limitante geográfica en Metro Mesh?",
+          "answer": [
+            "No.  Puedes tener tu sitio principal en el Distrito Federal y nodos en Puebla."
+          ]
+        },
+        {
+          "question": "¿Cúal es la diferencia entre los nodos?",
+          "answer": [
+            "La velocidad máxima que soportan."
+          ]
+        },
+        {
+          "question": "¿Puedo vender servicios incluyendo Internet a mis clientes usando Metro Mesh?",
+          "answer": [
+            "Absolutamente. Para esto lo diseñamos. Kiwi Networks se encarga de operar la red y tu de soportar los servicios que proveas con ella."
+          ]
+        }
+      ]
+    }
+  ]
+}

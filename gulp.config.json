@@ -1,0 +1,63 @@
+{
+  "client": "src/client/",
+  "htmlTemplates": "src/client/app/**/*.html",
+  "jsonTemplates": "src/client/app/**/*.json",
+  "vendorJs": [
+    "src/client/bower_components/angular/angular.js",
+    "src/client/bower_components/angular-animate/angular-animate.js",
+    "src/client/bower_components/angular-resource/angular-resource.js",
+    "src/client/bower_components/angular-sanitize/angular-sanitize.js",
+    "src/client/bower_components/angular-ui-router/release/angular-ui-router.js",
+    "src/client/bower_components/ng-file-upload/angular-file-upload.js"
+  ],
+  "vendorJsMaps": [
+  ],
+  "vendorCss": [
+    "src/client/bower_components/pure/base-min.css",
+    "src/client/bower_components/pure/grids-min.css",
+    "src/client/bower_components/pure/grids-responsive-min.css",
+    "src/client/bower_components/pure/forms-min.css",
+    "src/client/bower_components/pure/buttons-min.css",
+    "src/client/bower_components/ionicons/css/ionicons.min.css"
+  ],
+  "vendorCssMaps": [
+    "src/client/bower_components/ionicons/css/ionicons.min.css.map"
+  ],
+  "otherFiles": [
+    "src/client/crossdomain.xml",
+    "src/client/favicon.ico",
+    "src/client/humans.txt",
+    "src/client/robots.txt",
+    "src/client/divshot.json"
+  ],
+  "asyncLoaders": [
+    "src/client/bower_components/angular-loader/angular-loader.js",
+    "src/client/bower_components/script.js/dist/script.js"
+  ],
+  "css": [
+    "src/client/common/styles/main.css",
+    "src/client/app/**/*.css"
+  ],
+  "js": [
+    "src/client/app/**/*module*.js",
+    "src/client/app/**/*.js"
+  ],
+  "specs": [
+    "src/client/app/**/*.spec.js"
+  ],
+  "fonts": [
+    "src/client/common/fonts/**/*",
+    "src/client/bower_components/ionicons/fonts/*"
+  ],
+  "images": [
+    "src/client/common/images/**/*" 
+  ],
+  "videos": [
+    "src/client/common/videos/**/*" 
+  ],
+  "docs": [
+    "src/client/common/docs/**/*" 
+  ],
+  "report": "report/",
+  "build": "./build/"
+}

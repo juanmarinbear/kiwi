@@ -1,0 +1,93 @@
+{
+  "inputs" : {
+    "subject" : {
+      "name" : "subject",
+      "label" : "Asunto",
+      "help" : "¿Para qué nos contactas?",
+      "options" : {
+        "default" : "-- Ninguno --",
+        "items" : [
+          { "label" : "Proveeduría", "value" : "Proveeduría" },
+          { "label" : "Prensa", "value" : "Prensa" },
+          { "label" : "Otro", "value" : "Otro" }
+        ]
+      },
+      "validation" : {
+        "required" : "Asunto requerido."
+      }
+    },
+    "company" : {
+      "name" : "company",
+      "label" : "Empresa",
+      "placeholder" : "Planta Nuclear de Springfield",
+      "help" : "Tu empresa.",
+      "validation" : {}
+    },
+    "name" : {
+      "name" : "name",
+      "label" : "Nombre",
+      "placeholder" : "Homero",
+      "help" : "Tu nombre.",
+      "validation" : {
+        "required" : "Nombre requerido."
+      }
+    },
+    "last" : {
+      "name" : "last",
+      "label" : "Apellido",
+      "placeholder" : "Simpson",
+      "help" : "Tu apellido.",
+      "validation" : {
+        "required" : "Apellido requerido."
+      }
+    },
+    "email" : {
+      "name" : "email",
+      "label" : "Email",
+      "placeholder" : "homero.simpson@gmail.com",
+      "help" : "Tu email.",
+      "validation" : {
+        "required" : "Email requerido.",
+        "invalid" : "Email inválido."
+      }
+    },
+    "mobile" : {
+      "name" : "mobile",
+      "label" : "Móvil",
+      "placeholder" : "Móvil 10 dígitos",
+      "help" : "Tu móvil, 10 dígitos.",
+      "validation" : {
+        "required" : "Móvil requerido.",
+        "invalid" : "Móvil inválido.  Deben ser 10 dígitos."
+      }
+    },
+    "contact" : {
+      "name" : "contact",
+      "label" : "¿Cómo prefieres que te contactemos?",
+      "help" : "¿Cómo prefieres que te contactemos?",
+      "options" : {
+        "default" : "-- Contacto --",
+        "items" : [
+          { "label" : "Móvil", "value" : "Mobile"},
+          { "label" : "Email", "value" : "Email"},
+          { "label" : "WhatsApp", "value" : "WhatsApp"}
+        ]
+      },
+      "validation" : {
+        "required" : "Campo requerido."
+      }
+    },
+    "message" : {
+      "name" : "message",
+      "label" : "Mensaje",
+      "placeholder" : "¿Cómo podemos ayudarte?",
+      "help" : "¿Cómo podemos ayudarte?",
+      "validation" : {
+        "required"  : "Campo requerido."
+      }
+    },
+    "submit" : {
+      "label"  : "Enviar"
+    }
+  }
+}

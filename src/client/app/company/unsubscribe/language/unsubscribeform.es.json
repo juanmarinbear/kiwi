@@ -1,0 +1,76 @@
+{
+  "inputs" : {
+    "name" : {
+      "name" : "name",
+      "label" : "Nombre",
+      "placeholder" : "Homero",
+      "help" : "Tu nombre.",
+      "validation" : {
+        "required" : "Nombre requerido."
+      }
+    },
+    "last" : {
+      "name" : "last",
+      "label" : "Apellido",
+      "placeholder" : "Simpson",
+      "help" : "Tu apellido.",
+      "validation" : {
+        "required" : "Apellido requerido."
+      }
+    },
+    "email" : {
+      "name" : "email",
+      "label" : "Email",
+      "placeholder" : "homero.simpson@gmail.com",
+      "help" : "Tu email.",
+      "validation" : {
+        "required" : "Email requerido.",
+        "invalid" : "Email inválido."
+      }
+    },
+    "mobile" : {
+      "name" : "mobile",
+      "label" : "Móvil",
+      "placeholder" : "Móvil 10 dígitos",
+      "help" : "Tu móvil, 10 dígitos.",
+      "validation" : {
+        "required" : "Móvil requerido.",
+        "invalid" : "Móvil inválido.  Deben ser 10 dígitos."
+      }
+    },
+    "unsubscribeMobile" : {
+      "name" : "unsubscribeMobile",
+      "label" : "No deseo recibir comunicación por teléfono móvil o fijo.",
+      "help" : "No deseo recibir comunicación por teléfono móvil o fijo."
+    },
+    "unsubscribeEmail" : {
+      "name" : "unsubscribeEmail",
+      "label" : "No deseo recibir comunicación por Email.",
+      "help" : "No deseo recibir comunicación por Email."
+    },
+    "unsubscribeAddress" : {
+      "name" : "unsubscribeAddress",
+      "label" : "No deseo recibir comunicación a mi dirección física.",
+      "help" : "No deseo recibir comunicación a mi dirección física."
+    },
+    "opposeTransfer" : {
+      "name" : "opposeTransfer",
+      "label" : "Me opongo a que mis datos personales sean transferidos.",
+      "help" : "Me opongo a que mis datos personales sean transferidos."
+    },
+    "forgetMe" : {
+      "name" : "forgetMe",
+      "label" : "Eliminen todos los registros relacionado a mi.",
+      "help" : "Eliminaremos toda información relacionada a tu nombre, email o móvil en nuestras bases de datos.  Si todavía eres nuestro cliente, cancela tu(s) servicio(s) para que esta acción tenga efecto.  No podremos eliminar información que por caracter legal o fiscal debamos conservar como contratos, facturas, transacciones etc..."
+    },
+    "message" : {
+      "name" : "message",
+      "label" : "Mensaje",
+      "placeholder" : "¿Última palabra?",
+      "help" : "¿Últimas palabras?"
+    },
+    "submit" : {
+      "label"  : "Enviar"
+    }
+  }
+}

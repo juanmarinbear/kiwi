@@ -1,0 +1,19 @@
+<div class="kw-ticket">
+  <div class="kw-ticket-outer round noise">
+    <div class="kw-ticket-inner">
+      <div class="kw-ticket-header">
+        <h2>Ticket</h2>
+      </div>
+      <div class="kw-ticket-content">
+        <p data-ng-show="kwTicket.zendeskId"><strong><span>Ticket #</span></strong>: <span data-ng-bind="kwTicket.zendeskId"></span></p>
+        <p data-ng-show="kwTicket.name"><strong><span data-ng-bind="kwInputs.name.label"></span></strong>: <span data-ng-bind="kwTicket.name"></span></p>
+        <p data-ng-show="kwTicket.last"><strong><span data-ng-bind="kwInputs.last.label"></span></strong>: <span data-ng-bind="kwTicket.last"></span></p>
+        <p data-ng-show="kwTicket.email"><strong><span data-ng-bind="kwInputs.email.label"></span></strong>: <span data-ng-bind="kwTicket.email"></span></p>
+        <p data-ng-show="kwTicket.mobile"><strong><span data-ng-bind="kwInputs.mobile.label"></span></strong>: <span data-ng-bind="kwTicket.mobile"></span></p>
+      </div>
+      <div class="kw-ticket-footer">
+        <h2 data-ng-bind="kwTicket.zendeskId"></h2>
+      </div>
+    </div>
+  </div>
+</div>

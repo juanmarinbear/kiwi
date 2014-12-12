@@ -1,0 +1,393 @@
+/*
+ * Inline CSS
+ */
+
+body, html { 
+  font-size: 100%;
+  padding: 0; 
+  margin: 0; 
+  height: 100%;
+  overflow: hidden;
+}
+
+[ng-cloak],
+[ng-hide] {
+  display: none;
+}
+
+.kw-splash {
+  background: #C92C8F;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.kw-splash>div {
+  max-width: 50%;
+}
+
+.kw-perspective {
+  color: #ffffff;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-perspective: 1200px;
+	-moz-perspective: 1200px;
+	perspective: 1200px;
+  overflow: hidden;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.kw-page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	overflow: auto;
+}
+
+.kw-landing h1 {
+  font-size: 3rem;
+}
+
+.kw-landing h2 {
+  font-size: 2rem;
+}
+
+.kw-page > div {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 4rem;
+}
+
+.kw-page-current {
+  visibility: visible;
+  z-index: 1;
+}
+
+/*
+ * Backgrounds
+ */
+
+.kw-bg,
+video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+.kw-bgimg {
+  background: url(/common/images/background.jpg) no-repeat;
+}
+
+.kw-bgimg-blurred {
+  background: url(/common/images/backgroundblurred.jpg) no-repeat;
+}
+
+/*
+ * Animations
+ */
+
+.kw-appear {
+  opacity: 1;
+}
+
+.kw-appear.ng-hide-add.ng-hide-add-active,
+.kw-appear.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s all;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s all;
+}
+
+.kw-appear.ng-hide {
+  opacity: 0;
+}
+
+.kw-up {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.kw-up.ng-hide-add.ng-hide-add-active,
+.kw-up.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s all;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s all;
+}
+
+.kw-up.ng-hide {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+/*!
+Pure v0.5.0
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+https://github.com/yui/pure/blob/master/LICENSE.md
+*/
+.pure-button {
+  /* Structure */
+  display: inline-block;
+  *display: inline; /*IE 6/7*/
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: baseline;
+  text-align: center;
+  cursor: pointer;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.pure-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/*csslint outline-none:false*/
+
+.pure-button {
+  font-family: inherit;
+  font-size: 100%;
+  *font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+  *overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+  padding: 0.5em 1em;
+  color: #444; /* rgba not supported (IE 8) */
+  color: rgba(0, 0, 0, 0.80); /* rgba supported */
+  *color: #444; /* IE 6 & 7 */
+  border: 1px solid #999;  /*IE 6/7/8*/
+  border: none rgba(0, 0, 0, 0);  /*IE9 + everything else*/
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.pure-button-hover,
+.pure-button:hover,
+.pure-button:focus {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000',GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0,0,0, 0.05)), to(rgba(0,0,0, 0.10)));
+  background-image: -webkit-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+  background-image: -moz-linear-gradient(top, rgba(0,0,0, 0.05) 0%, rgba(0,0,0, 0.10));
+  background-image: -o-linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+  background-image: linear-gradient(transparent, rgba(0,0,0, 0.05) 40%, rgba(0,0,0, 0.10));
+}
+.pure-button:focus {
+  outline: 0;
+}
+.pure-button-active,
+.pure-button:active {
+  box-shadow: 0 0 0 1px rgba(0,0,0, 0.15) inset, 0 0 6px rgba(0,0,0, 0.20) inset;
+}
+
+.pure-button[disabled],
+.pure-button-disabled,
+.pure-button-disabled:hover,
+.pure-button-disabled:focus,
+.pure-button-disabled:active {
+  border: none;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  filter: alpha(opacity=40);
+  -khtml-opacity: 0.40;
+  -moz-opacity: 0.40;
+  opacity: 0.40;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.pure-button-hidden {
+  display: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.pure-button::-moz-focus-inner{
+  padding: 0;
+  border: 0;
+}
+
+.pure-button-primary,
+.pure-button-selected,
+a.pure-button-primary,
+a.pure-button-selected {
+  background-color: rgb(0, 120, 231);
+  color: #fff;
+}
+
+/*
+ * Buttons
+ */
+
+.kw-button-group {
+  text-align: center;
+}
+
+.kw-button-group button,
+.kw-button-group a {
+  margin: 0.5rem;
+}
+
+/*
+ * Main CSS
+ */
+
+/*
+ * Element Styles
+ */
+
+a {
+  color: #ffffff;
+}
+
+/*
+ * Icons
+ */
+
+.kw-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kw-icon > div {
+  max-width: 50%;
+}
+
+.kw-icon-xl {
+  font-size: 12rem;
+}
+
+.kw-icon-lg {
+  font-size: 9rem;
+}
+
+.kw-icon-md {
+  font-size: 6rem;
+}
+
+.kw-icon-sm {
+  font-size: 3rem;
+}
+
+/*
+ * Page Styles
+ */
+
+.kw-page h1,
+.kw-page h2,
+.kw-page h3 {
+  text-align: center; 
+}
+
+.kw-page ul {
+  list-style-type: none;
+}
+
+.kw-page li:before {
+  font-family: 'Ionicons';
+  content: '\f3fe';
+  width: 1.4rem;
+  float: left;
+}
+
+.kw-index h2,
+.kw-index h3 {
+  text-align: left;
+}
+
+.kw-section p {
+  padding: 0 1rem;
+}
+
+/*
+ * Buttons
+ */
+
+.pure-button {
+  color: #ffffff;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #ffffff;
+  max-width: 8rem;
+  width: 100%;
+}
+
+.pure-button:hover {
+  color: #000000;
+  background-color: rgba(255,255,255,1);
+}
+
+.pure-button-disabled {
+  color: #000000;
+  background-color: rgba(255,255,255,1);
+}
+
+/*
+ * Form Styles
+ */
+
+.kw-error {
+  color: rgb(202, 60, 60);
+}
+
+.kw-input {
+  margin: 0.5rem auto;
+  max-width: 16rem;
+  width: 100%;
+}
+
+.pure-form-stacked label, .pure-form-stacked p {
+  text-align: center;
+}
+
+.pure-form-stacked input[type='text'], 
+.pure-form-stacked input[type='number'], 
+.pure-form-stacked input[type='email'], 
+.pure-form-stacked input[type='url'], 
+.pure-form-stacked input[type='password'], 
+.pure-form-stacked textarea, 
+.pure-form-stacked select {
+  margin: 0.5rem auto;
+  max-width: 16rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.pure-form-stacked select option {
+  background-color: #333;
+}

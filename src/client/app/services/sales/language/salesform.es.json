@@ -1,0 +1,182 @@
+{
+  "inputs": {
+    "service": {
+      "name": "service",
+      "label": "Servicio",
+      "help": "¿Qué servicio te interesa?",
+      "options": {
+        "default": "-- Servicio --",
+        "items": [
+          { "label": "Residential", "value": "Residential" },
+          { "label": "Business", "value": "Business" },
+          { "label": "Dedicated", "value": "Dedicated" },
+          { "label": "Metro Mesh", "value": "Metro Mesh" }
+        ]
+      },
+      "validation": {
+        "required": "Servicio requerido."
+      }
+    },
+    "company": {
+      "name": "company",
+      "label": "Empresa",
+      "placeholder": "Planta Nuclear de Springfield",
+      "help": "Tu empresa.",
+      "validation": {}
+    },
+    "name": {
+      "name": "name",
+      "label": "Nombre",
+      "placeholder": "Homero",
+      "help": "Tu nombre.",
+      "validation": {
+        "required": "Nombre requerido."
+      }
+    },
+    "last": {
+      "name": "last",
+      "label": "Apellido",
+      "placeholder": "Simpson",
+      "help": "Tu apellido.",
+      "validation": {
+        "required": "Apellido requerido."
+      }
+    },
+    "email": {
+      "name": "email",
+      "label": "Email",
+      "placeholder": "homero.simpson@gmail.com",
+      "help": "Tu email.",
+      "validation": {
+        "required": "Email requerido.",
+        "invalid": "Email inválido."
+      }
+    },
+    "mobile": {
+      "name": "mobile",
+      "label": "Móvil",
+      "placeholder": "Móvil 10 dígitos",
+      "help": "Tu móvil, 10 dígitos.",
+      "validation": {
+        "required": "Móvil requerido.",
+        "invalid": "Móvil inválido.  Deben ser 10 dígitos."
+      }
+    },
+    "contact": {
+      "name": "contact",
+      "label": "¿Cómo prefieres que te contactemos?",
+      "help": "¿Cómo prefieres que te contactemos?",
+      "options": {
+        "default": "-- Contacto --",
+        "items": [
+          { "label": "Móvil", "value": "Mobile"},
+          { "label": "Email", "value": "Email"},
+          { "label": "WhatsApp", "value": "WhatsApp"}
+        ]
+      },
+      "validation": {
+        "required": "Campo requerido."
+      }
+    },
+    "zip": {
+      "name": "zip",
+      "label": "Código Postal",
+      "placeholder": "Código Postal",
+      "help": "Tu código postal.",
+      "validation": {
+        "required": "Código Postal requerido.",
+        "invalid": "Código Postal inválido.  Deben ser 5 dígitos.",
+        "inexistent": "Código Postal inexistente."
+      }
+    },
+    "state": {
+      "name": "state",
+      "label": "Estado",
+      "help": "Tu estado.",
+      "options": {
+        "default": "-- Estado --"
+      },
+      "validation": {
+        "required": "Estado requerido."
+      }
+    },
+    "municipality": {
+      "name": "municipality",
+      "label": "Ciudad / Delegación / Municipio",
+      "help": "Tu ciudad, delegación o municipio.",
+      "options": {
+        "default": "-- Ciudad --"
+      },
+      "validation": {
+        "required": "Ciudad requerida."
+      }
+    },
+    "district": {
+      "name": "district",
+      "label": "Colonia",
+      "placeholder": "Colonia",
+      "help": "Tu colonia.",
+      "options": {
+        "default": "-- Colonia --"
+      },
+      "validation": {
+        "required": "Colonia requerida."
+      }
+    },
+    "street": {
+      "name": "street",
+      "label": "Calle",
+      "placeholder": "Calle",
+      "help": "Tu calle.",
+      "validation": {
+        "required": "Calle requerida."
+      }
+    },
+    "number": {
+      "name": "number",
+      "label": "Número Exterior",
+      "placeholder": "Número Exterior",
+      "help": "Tu número exterior.",
+      "validation": {
+        "required": "Número Exterior requerido."
+      }
+    },
+    "apt": {
+      "name": "apt",
+      "label": "Interior",
+      "placeholder": "Número Interior",
+      "help": "Tu número interior.",
+      "validation": {}
+    },
+    "building": {
+      "name": "building",
+      "labelResidential": "¿Vives en edificio?",
+      "labelBusiness": "¿Tu negocio está en un edificio?",
+      "helpResidential": "¿Vives en un edificio?",
+      "helpBusiness": "Tu negocio está en un edificio?",
+      "options": {
+        "default": "-- Seleccionar --",
+        "items": [
+          { "label": "Si", "value": "building" },
+          { "label": "No", "value": "ground" }
+        ]
+      },
+      "validation": {
+        "required": "Campo requerido."
+      }
+    },
+    "levels": {
+      "name": "levels",
+      "label": "Niveles de tu edificio",
+      "placeholder": "Niveles",
+      "help": "Niveles en tu edificio.  Si vives en casa o tu negocio es un local, usa 1.",
+      "validation": {
+        "required": "Niveles requerido.",
+        "invalid": "Niveles inválido.  Debe ser entre 1 y 99."
+      }
+    },
+    "submit": {
+      "label": "Enviar"
+    }
+  }
+}

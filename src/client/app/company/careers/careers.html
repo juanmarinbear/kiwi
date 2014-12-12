@@ -1,0 +1,19 @@
+<div class="pure-g">
+  <div class="pure-u-1">
+    <h1 id="{{ vm.text.anchor }}" data-ng-bind="vm.text.title"></h1>
+  </div>
+  <div class="pure-u-1 kw-index" data-ng-repeat="location in vm.text.locations">
+    <h2 data-ng-bind="location.title"></h2>
+    <div data-ng-repeat="career in location.careers">
+      <h3><a href="{{ career.href }}" data-ng-bind="career.name" data-ng-click="vm.scroll(career.anchor)"></a></h3>
+    </div>
+  </div>
+  <div class="pure-u-1 kw-index" data-ng-repeat="description in vm.text.descriptions">
+    <h2 id="{{ description.anchor }}" data-ng-bind="description.title"></h2>
+    <p data-ng-repeat="paragraph in description.intro" data-ng-bind="paragraph"></p>
+    <div data-ng-repeat="section in description.sections">
+      <h3 data-ng-bind="section.title"></h3>
+      <p data-ng-repeat="paragraph in section.paragraphs" data-ng-bind-html="paragraph"></p>
+    </div>
+  </div>
+</div>

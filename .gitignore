@@ -1,0 +1,39 @@
+# --------------------
+# Node 
+# --------------------
+
+node_modules
+
+# --------------------
+# Bower 
+# --------------------
+
+src/client/bower_components
+
+
+# --------------------
+# Parse 
+# --------------------
+
+cloud_code/cloud/auth.js
+cloud_code/config/global.json
+cloud_code/public
+
+# --------------------
+# API 
+# --------------------
+
+src/common/services/auth.js
+
+# --------------------
+# Build 
+# --------------------
+
+build
+
+# --------------------
+# Misc 
+# --------------------
+.tmp
+.sass-cache
+report

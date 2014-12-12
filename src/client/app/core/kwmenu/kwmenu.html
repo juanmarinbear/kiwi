@@ -1,0 +1,25 @@
+<div>
+  <a href="" id="menuLink" class="menu-link" data-ng-class="{active: active}" data-ng-click="toggleMenu()">
+    <div class="menu-icon">
+      <i class="icon" data-ng-class="icon"></i>
+    </div>
+  </a>
+
+  <div id="menu" data-ng-class="{active: active}">
+    <div class="pure-menu pure-menu-open">
+      <a class="pure-menu-heading" href="/#/" data-ng-bind="kwMenu.title" data-ng-click="toggleMenu()"></a>
+      <ul>
+        <li data-ng-repeat="section in kwMenu.sections">
+        <a href="" data-ng-bind="section.label" data-ng-class="{'pure-menu-selected': section.visible}" data-ng-click="toggleSection(section)"></a>
+          <div class="menu-item-divided">
+            <ul class="section" data-ng-style="sectionStyle(section)">
+              <li data-ng-repeat="section in section.sections">
+                <a href="{{ section.href }}" target="{{ section.target }}"data-ng-bind="section.label" data-ng-click="toggleMenu()"></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

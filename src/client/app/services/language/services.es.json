@@ -1,0 +1,89 @@
+{
+  "title" : "Servicios",
+  "services" : [ 
+    { 
+      "icon" : "ion-home",
+      "title" : "Residencial",
+      "paragraphs" : [
+        "Velocidad simétrica",
+        "Servicio best effort",
+        "DHCP con IP pública",
+        "50 Mbps a 1 Gbps"
+      ],
+      "price" : "$580 / mes",
+      "buttons" : [
+        {
+          "title" : "Conoce Más",
+          "href" : "/#/residential"
+        }, 
+        {
+          "title" : "Contrata",
+          "href" : "/#/sales/residential"
+        } 
+      ]
+    },
+    { 
+      "icon" : "ion-briefcase",
+      "title" : "Business",
+      "paragraphs" : [
+        "Velocidad simétrica",
+        "Servicio best effort",
+        "Hasta 8 IPs estáticas",
+        "20 Mbps a 1 Gbps"
+      ],
+      "price" : "Desde $1,160 / mes",
+      "buttons" : [
+        {
+          "title" : "Conoce Más",
+          "href" : "/#/business"
+        }, 
+        {
+          "title" : "Contrata",
+          "href" : "/#/sales/business"
+        } 
+      ]
+    },
+    { 
+      "icon" : "ion-jet",
+      "title" : "Dedicated",
+      "paragraphs" : [
+        "Velocidad simétrica",
+        "Hasta 8 IPs estáticas",
+        "4 Mbps a 10 Gbps",
+        "Garantía de servicio"
+      ],
+      "price" : "Desde $5,800 / mes",
+      "buttons" : [
+        {
+          "title" : "Conoce Más",
+          "href" : "/#/dedicated"
+        }, 
+        {
+          "title" : "Contrata",
+          "href" : "/#/sales/dedicated"
+        } 
+      ]
+    },
+    { 
+      "icon" : "ion-network",
+      "title" : "Metro Mesh",
+      "paragraphs" : [
+        "Conecta 2 o más sitios",
+        "MPLS / VPN",
+        "Administramos tu red",
+        "Garantía de servicio"
+      ],
+      "price" : "Desde $41,720 / mes",
+      "buttons" : [
+        {
+          "title" : "Conoce Más",
+          "href" : "/#/metromesh"
+        }, 
+        {
+          "title" : "Contrata",
+          "href" : "/#/sales/metromesh"
+        } 
+      ]
+    } 
+  ] 
+}

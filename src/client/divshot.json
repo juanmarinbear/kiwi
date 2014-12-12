@@ -1,0 +1,10 @@
+{
+  "name": "kiwi",
+  "root": "./",
+  "clean_urls": true,
+  "error_page": "error.html",
+  "cache_control": {
+    "/*.js": 604800,
+    "/common/**":604800 
+  }
+}

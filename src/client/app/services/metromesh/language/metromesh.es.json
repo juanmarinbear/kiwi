@@ -1,0 +1,41 @@
+{
+  "title" : "Metro Mesh",
+  "icon" : "ion-network",
+  "paragraphs" : [
+    "Sin plan forzoso ni costo de instalación",
+    "Cancela sin penalización",
+    "Compra Bandwidth en una ubicación y distribuye a tus clientes o sucursales",
+    "Kiwi Networks administra y da soporte a tu red",
+    "SLA 99.95%",
+    "Si no estas satisfecho, dinos porqué y paga lo que creas justo (Short Pay)",
+    "Require un Dedicated de 50 Mbps",
+    "Incluye nodo gratis de 20 Mbps por cada 10 Mbps de Bandwidth contratados"
+  ],
+  "pricing" : [
+    {
+      "title" : "N20",
+      "description" : "Hasta 20 Mbps / 20 Mbps",
+      "price" : "$580 / mes"
+    },
+    {
+      "title" : "N100",
+      "description" : "Hasta 100 Mbps / 100 Mbps",
+      "price" : "$1,740 / mes"
+    },
+    {
+      "title" : "N500",
+      "description" : "Hasta 500 Mbps / 500 Mbps",
+      "price" : "$5,800 / mes"
+    }
+  ],
+  "buttons" : [
+    {
+      "title" : "¿Dudas?",
+      "href" : "/#/faq#metromesh"
+    }, 
+    {
+      "title" : "Contrata",
+      "href" : "/#/sales/metromesh"
+    } 
+  ]
+}

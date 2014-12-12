@@ -1,0 +1,41 @@
+{
+  "title" : "Dashboard",
+  "sections" : [
+    {
+      "title" : "Cuenta",
+      "icon" : "ion-gear-a",
+      "paragraphs" : [
+        "Administra la información de tu cuenta.",
+        "Modifica o cancela servicios.",
+        "Administra usuarios."
+      ]
+    },
+    {
+      "title" : "Kiwi Cloud",
+      "icon" : "ion-ionic",
+      "paragraphs" : [
+        "Consulta el estado actual e historial de tu enlace.",
+        "Consulta tu velocidad promedio hacia Kiwi Networks y AWS.",
+        "Consulta tu consumo de bandwidth."
+      ]
+    },
+    {
+      "title" : "Pagos y Facturación",
+      "icon" : "ion-cash",
+      "paragraphs" : [
+        "Paga tu servicio con tarjeta de crédito, débito, transferencia bancaria o en Oxxo.",
+        "Genera tu factura y descárgala.",
+        "Consulta historial de pagos y facturación."
+      ]
+    },
+    {
+      "title" : "Soporte",
+      "icon" : "ion-medkit",
+      "paragraphs" : [
+        "Levanta tickets de soporte.",
+        "Consulta tickets anteriores.",
+        "Escribe directo al CEO."
+      ]
+    }
+  ]
+}

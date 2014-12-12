@@ -1,0 +1,152 @@
+{
+  "title": "Kiwi",
+  "sections": [
+    {
+      "name": "services",
+      "label": "Servicios",
+      "visible": true,
+      "sections": [
+        {
+          "name": "services",
+          "label": "Servicios",
+          "href": "/#/services"
+        },
+        {
+          "name": "residential",
+          "label": "Residencial",
+          "href": "/#/residential"
+        },
+        {
+          "name": "business",
+          "label": "Business",
+          "href": "/#/business"
+        },
+        {
+          "name": "dedicated",
+          "label": "Dedicado",
+          "href": "/#/dedicated"
+        },
+        {
+          "name": "metromesh",
+          "label": "Metro Mesh",
+          "href": "/#/metromesh"
+        },
+        {
+          "name": "faq",
+          "label": "Preguntas",
+          "href": "/#/faq"
+        },
+        {
+          "name": "sales",
+          "label": "Contrata",
+          "href": "/#/sales/"
+        }
+      ]
+    },
+    {
+      "name": "company",
+      "label": "Empresa",
+      "visible": false,
+      "sections": [
+        {
+          "name": "about",
+          "label": "Nosotros",
+          "href": "/#/about"
+        },
+        {
+          "name": "concesion",
+          "label": "Concesion",
+          "href": "/#/concesion"
+        },
+        {
+          "name": "blog",
+          "label": "Blog",
+          "href": "http://blog.kiwinetworks.com",
+          "target": "_blank"
+        },
+        {
+          "name": "careers",
+          "label": "Trabajo",
+          "href": "/#/careers"
+        },
+        {
+          "name": "stories",
+          "label": "Casos de Éxito",
+          "href": "/#/stories"
+        },
+        {
+          "name": "privacy",
+          "label": "Privacidad",
+          "href": "/#/privacy"
+        }
+      ]
+    },
+    {
+      "name": "customer",
+      "label": "Clientes",
+      "visible": false,
+      "sections": [
+        {
+          "name": "dashboard",
+          "label": "Dashboard",
+          "href": "/#/dashboard"
+        },
+        {
+          "name": "pay",
+          "label": "Paga",
+          "href": "/#/pay"
+        },
+        {
+          "name": "refer",
+          "label": "Recomienda",
+          "href": "/#/refer"
+        }
+      ]
+    },
+    {
+      "name": "support",
+      "label": "Soporte",
+      "visible": false,
+      "sections": [
+        {
+          "name": "support",
+          "label": "Soporte",
+          "href": "/#/support"
+        },
+        {
+          "name": "helpcenter",
+          "label": "Help Center",
+          "href": "http://support.kiwinetworks.com",
+          "target": "_blank"
+        },
+        {
+          "name": "status",
+          "label": "Status",
+          "href": "/#/status"
+        }
+      ]
+    },
+    {
+      "name": "contact",
+      "label": "Contacto",
+      "visible": false,
+      "sections": [
+        {
+          "name": "contact",
+          "label": "Teléfono",
+          "href": "/#/contact"
+        },
+        {
+          "name": "contact",
+          "label": "Email",
+          "href": "/#/contact"
+        },
+        {
+          "name": "contact",
+          "label": "Social",
+          "href": "/#/contact"
+        }
+      ]
+    }
+  ]
+}

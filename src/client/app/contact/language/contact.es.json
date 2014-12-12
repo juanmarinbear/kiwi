@@ -1,0 +1,63 @@
+{
+  "title" : "Contacto",
+  "sections" : [
+    {
+      "title" : "Online",
+      "subtitle" : "Para darte atención inmediata y eficiente, usa nuestras formas online:",
+      "icon" : "ion-at",
+      "paragraphs" : [
+        "<a href=\"/#/sales/\">Ventas</a>",
+        "<a href=\"/#/support\">Soporte</a>"
+      ]
+    },
+    {
+      "title" : "Teléfono",
+      "subtitle" : "Llámanos a:",
+      "icon" : "ion-iphone",
+      "paragraphs" : [
+        "México:",
+        "Estados Unidos:"
+      ]
+    },
+    {
+      "title" : "Email",
+      "subtitle" : "Escríbenos a:",
+      "icon" : "ion-email",
+      "paragraphs" : [
+        "<a class=\"kw-mailto\" href=\"mailto:sales@kiwinetworks.com?Subject=Sales\" target=\"_blank\">Ventas: sales[a]kiwinetworks.com</a>",
+        "<a class=\"kw-mailto\" href=\"mailto:support@kiwinetworks.com?Subject=Support\" target=\"_blank\">Soporte: support[a]kiwinetworks.com</a>",
+        "<a class=\"kw-mailto\" href=\"mailto:contact@kiwinetworks.com?Subject=Contact\" target=\"_blank\">Contacto: contact[a]kiwinetworks.com</a>"
+      ]
+    },
+    {
+      "title" : "Redes Sociales",
+      "subtitle" : "Síguenos en:",
+      "icon" : "ion-social-twitter",
+      "paragraphs" : [
+        "Facebook: <a href=\"https://www.facebook.com/KiwiNetworks\" target=\"_blank\">KiwiNetworks</a>",
+        "Twitter: <a href=\"https://twitter.com/KiwiNetworks\" target=\"_blank\">@kiwinetworks</a>"
+      ]
+    }
+  ],
+  "paragraphs": [
+    "También puedes usar nuestra forma de contacto." 
+  ],
+  "messages": {
+    "success": {
+      "title": "Solicitud Exitosa",
+      "paragraphs": [
+        "Recibimos tu solicitud.",
+        "Un representante de Kiwi Networks te contactará dentro de los próximos 15 minutos en horario laboral (L a V, 8:00 a 18:00) o temprano el siguiente día hábil.",
+        "Si esto no sucede, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+      ]
+    },
+    "error": {
+      "title": "Error",
+      "paragraphs": [
+        "Ocurrió un error.",
+        "Te pedimos intentes nuevamente.",
+        "Si el problema persiste, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+      ]
+    }
+  }
+}

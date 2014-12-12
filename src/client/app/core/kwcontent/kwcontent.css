@@ -1,0 +1,110 @@
+/*
+ * Animations
+ */
+
+[ui-view].up,
+[ui-view].down,
+[ui-view].left,
+[ui-view].right,
+[ui-view].appear {
+  -webkit-transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s all;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 0.5s all;
+  -webkit-transition-delay: 0.1s; 
+  transition-delay: 0.1s; 
+}
+
+[ui-view].up.ng-enter {
+  -webkit-transform: translateY(100%); 
+  transform: translateY(100%); 
+}
+
+[ui-view].up.ng-enter-active {
+  -webkit-transform: translateY(0%); 
+  transform: translateY(0%); 
+}
+
+[ui-view].up.ng-leave {
+  -webkit-transform: translateY(0%); 
+  transform: translateY(0%); 
+}
+
+[ui-view].up.ng-leave-active {
+  -webkit-transform: translateY(-100%); 
+  transform: translateY(-100%); 
+}
+
+[ui-view].down.ng-enter {
+  -webkit-transform: translateY(-100%); 
+  transform: translateY(-100%); 
+}
+
+[ui-view].down.ng-enter-active {
+  -webkit-transform: translateY(0%); 
+  transform: translateY(0%); 
+}
+
+[ui-view].down.ng-leave {
+  -webkit-transform: translateY(0%); 
+  transform: translateY(0%); 
+}
+
+[ui-view].down.ng-leave-active {
+  -webkit-transform: translateY(100%); 
+  transform: translateY(100%); 
+}
+
+[ui-view].right.ng-enter {
+  -webkit-transform: translateX(100%); 
+  transform: translateX(100%); 
+}
+
+[ui-view].right.ng-enter-active {
+  -webkit-transform: translateX(0%); 
+  transform: translateX(0%); 
+}
+
+[ui-view].right.ng-leave {
+  -webkit-transform: translateX(0%); 
+  transform: translateX(0%); 
+}
+
+[ui-view].right.ng-leave-active {
+  -webkit-transform: translateX(-100%); 
+  transform: translateX(-100%); 
+}
+
+[ui-view].left.ng-enter {
+  -webkit-transform: translateX(-100%); 
+  transform: translateX(-100%); 
+}
+
+[ui-view].left.ng-enter-active {
+  -webkit-transform: translateX(0%); 
+  transform: translateX(0%); 
+}
+
+[ui-view].left.ng-leave {
+  -webkit-transform: translateX(0%); 
+  transform: translateX(0%); 
+}
+
+[ui-view].left.ng-leave-active {
+  -webkit-transform: translateX(100%); 
+  transform: translateX(100%); 
+}
+
+[ui-view].appear.ng-enter {
+  opacity: 0;
+}
+
+[ui-view].appear.ng-enter-active {
+  opacity: 1;
+}
+
+[ui-view].appear.ng-leave {
+  opacity: 1;
+}
+
+[ui-view].appear.ng-leave-active {
+  opacity: 0;
+}

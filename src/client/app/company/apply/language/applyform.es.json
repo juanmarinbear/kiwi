@@ -1,0 +1,198 @@
+{
+  "inputs" : {
+    "role" : {
+      "name" : "role",
+      "label" : "Puesto",
+      "help" : "¿Para qué puesto deseas aplicar?",
+      "options" : {
+        "default" : "-- Ninguno --",
+        "items" : [
+          { "label" : "Ingeniero de Redes", "value" : "Ingeniero de Redes" },
+          { "label" : "Ingeniero de Soluciones", "value" : "Ingeniero de Soluciones" },
+          { "label" : "Ingeniero de Software", "value" : "Ingeniero de Software" }
+        ]
+      },
+      "validation" : {
+        "required" : "Puesto requerido."
+      }
+    },
+    "state" : {
+      "name" : "state",
+      "label" : "Ubicación",
+      "help" : "¿En qué plaza deseas aplicar?",
+      "options" : {
+        "default" : "-- Ninguno --",
+        "items" : [
+          { "label" : "Distrito Federal", "value" : "Distrito Federal" },
+          { "label" : "Puebla", "value" : "Puebla" },
+          { "label" : "Estado de México", "value" : "Estado de México" }
+        ]
+      },
+      "validation" : {
+        "required" : "Ubicación requerida."
+      }
+    },
+    "name" : {
+      "name" : "name",
+      "label" : "Nombre",
+      "placeholder" : "Homero",
+      "help" : "Tu nombre.",
+      "validation" : {
+        "required" : "Nombre requerido."
+      }
+    },
+    "last" : {
+      "name" : "last",
+      "label" : "Apellido",
+      "placeholder" : "Simpson",
+      "help" : "Tu apellido.",
+      "validation" : {
+        "required" : "Apellido requerido."
+      }
+    },
+    "email" : {
+      "name" : "email",
+      "label" : "Email",
+      "placeholder" : "homero.simpson@gmail.com",
+      "help" : "Tu email.",
+      "validation" : {
+        "required" : "Email requerido.",
+        "invalid" : "Email inválido."
+      }
+    },
+    "mobile" : {
+      "name" : "mobile",
+      "label" : "Móvil",
+      "placeholder" : "Móvil 10 dígitos",
+      "help" : "Tu móvil, 10 dígitos.",
+      "validation" : {
+        "required" : "Móvil requerido.",
+        "invalid" : "Móvil inválido.  Deben ser 10 dígitos."
+      }
+    },
+    "contact" : {
+      "name" : "contact",
+      "label" : "¿Cómo prefieres que te contactemos?",
+      "help" : "¿Cómo prefieres que te contactemos?",
+      "options" : {
+        "default" : "-- Contacto --",
+        "items" : [
+          { "label" : "Móvil", "value" : "Mobile"},
+          { "label" : "Email", "value" : "Email"},
+          { "label" : "WhatsApp", "value" : "WhatsApp"}
+        ]
+      },
+      "validation" : {
+        "required" : "Campo requerido."
+      }
+    },
+    "education" : {
+      "name" : "education",
+      "label" : "Educación",
+      "help" : "Máximo nivel de escolaridad terminado.",
+      "options" : {
+        "default" : "-- Ninguno --",
+        "items" : [
+          { "label" : "Preparatoria", "value" : "Preparatoria" },
+          { "label" : "Licenciatura", "value" : "Licenciatura" },
+          { "label" : "Maestría", "value" : "Maestría" },
+          { "label" : "Doctorado", "value" : "Doctorado" }
+        ]
+      },
+      "validation" : {
+        "required" : "Educación requerida."
+      }
+    },
+    "college" : {
+      "name" : "college",
+      "label" : "Carrera Licenciatura",
+      "placeholder" : "Ingeniería Nuclear",
+      "help" : "Carrera que cursaste en la licenciatura.",
+      "validation" : {
+        "required" : "Carrera requerida."
+      }
+    },
+    "collegeUrl" : {
+      "name" : "collegeUrl",
+      "label" : "Url de Universidad Licenciatura",
+      "placeholder" : "http://www.monsters.edu",
+      "help" : "Url de universidad donde cursaste tu licenciatura.",
+      "validation" : {
+        "required" : "Url requerida.",
+        "url" : "Url inválida.  Debe tener este formato: http://www.ejemplo.com."
+      }
+    },
+    "masters" : {
+      "name" : "masters",
+      "label" : "Programa de Maestría",
+      "placeholder" : "Maestría en Ingeniería Aeronáutica",
+      "help" : "Programa de maestría.",
+      "validation" : {
+        "required" : "Programa requerido."
+      }
+    },
+    "mastersUrl" : {
+      "name" : "mastersUrl",
+      "label" : "Url de Universidad Maestría",
+      "placeholder" : "www.monsters.edu",
+      "help" : "Url de universidad donde cursaste tu maestría.",
+      "validation" : {
+        "required" : "Url requerida.",
+        "url" : "Url inválida.  Debe tener este formato: http://www.ejemplo.com."
+      }
+    },
+    "phd" : {
+      "name" : "phd",
+      "label" : "Programa de Doctorado",
+      "placeholder" : "Doctorado en Balística",
+      "help" : "Programa de doctorado.",
+      "validation" : {
+        "required" : "Programa requerido."
+      }
+    },
+    "phdUrl" : {
+      "name" : "phdUrl",
+      "label" : "Url de Universidad Doctorado",
+      "placeholder" : "www.monsters.edu",
+      "help" : "Url de universidad donde cursaste tu doctorado.",
+      "validation" : {
+        "required" : "Url requerida.",
+        "url" : "Url inválida.  Debe tener este formato: http://www.ejemplo.com."
+      }
+    },
+    "experience" : {
+      "name" : "experience",
+      "label" : "Experiencia",
+      "placeholder" : "Años",
+      "help" : "Años de experiencia realizando funciones similares a las que requiere el puesto.",
+      "validation" : {
+        "required" : "Experiencia requerida.",
+        "invalid" : "Experiencia inválida.  Debe ser entre 1 y 99 años."
+      }
+    },
+    "resume" : {
+      "name" : "resume",
+      "label" : "Curriculum (PDF)",
+      "placeholder" : "Curriculum",
+      "help" : "Curriculum.",
+      "validation" : {
+        "invalid" : "Curriculum inválido, debe ser PDF."
+      }
+    },
+    "message" : {
+      "name" : "message",
+      "label" : "Cover Letter",
+      "placeholder" : "¿Por qué quieres unirte a nuestro equipo?",
+      "help" : "¿Por qué quieres unirte a nuestro equipo?",
+      "validation" : {
+        "required"  : "Campo requerido."
+      }
+    },
+    "select" : {
+      "label"  : "Seleccionar"
+    },
+    "submit" : {
+      "label"  : "Enviar"
+    }
+  }
+}

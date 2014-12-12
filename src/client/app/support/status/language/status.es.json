@@ -1,0 +1,23 @@
+{
+  "title" : "Status",
+  "subtitle" : "En esta página puedes ver el status de nuestra red.",
+  "paragraphs" : [
+    "Verde: Más de un 95% de la red operacional.",
+    "Amarillo: Más de un 70% de la red operacional.",
+    "Rojo: Menos de un 70% de la red operacional."
+  ],
+  "networks" : [
+    {
+      "name": "Distrito Federal",
+      "status": "Green"
+    },
+    {
+      "name": "Puebla",
+      "status": "Green"
+    },
+    {
+      "name": "Estado de México",
+      "status": "Green"
+    }
+  ]
+}

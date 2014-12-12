@@ -1,0 +1,109 @@
+{
+  "inputs" : {
+    "service" : {
+      "name" : "service",
+      "label" : "Servicio",
+      "help" : "¿Qué servicio contrataste?",
+      "options" : {
+        "default" : "-- Ninguno --",
+        "items" : [
+          { "label" : "Residential", "value" : "Residential" },
+          { "label" : "Business", "value" : "Business" },
+          { "label" : "Dedicated", "value" : "Dedicated" },
+          { "label" : "Metro Mesh", "value" : "Metro Mesh" }
+        ]
+      },
+      "validation" : {
+        "required" : "Servicio requerido."
+      }
+    },
+    "subject" : {
+      "name" : "subject",
+      "label" : "Asunto",
+      "help" : "¿Cuál es el problema?",
+      "options" : {
+        "default" : "-- Ninguno --",
+        "items" : [
+          { "label" : "Desconexión", "value" : "Desconexión" },
+          { "label" : "Lentitud", "value" : "Lentitud" },
+          { "label" : "Facturación y Cobranza", "value" : "Facturación y Cobranza" },
+          { "label" : "Otro", "value" : "Otro" }
+        ]
+      },
+      "validation" : {
+        "required" : "Asunto requerido."
+      }
+    },
+    "company" : {
+      "name" : "company",
+      "label" : "Empresa",
+      "placeholder" : "Planta Nuclear de Springfield",
+      "help" : "Tu empresa.",
+      "validation" : {}
+    },
+    "name" : {
+      "name" : "name",
+      "label" : "Nombre",
+      "placeholder" : "Homero",
+      "help" : "Tu nombre.",
+      "validation" : {
+        "required" : "Nombre requerido."
+      }
+    },
+    "last" : {
+      "name" : "last",
+      "label" : "Apellido",
+      "placeholder" : "Simpson",
+      "help" : "Tu apellido.",
+      "validation" : {
+        "required" : "Apellido requerido."
+      }
+    },
+    "email" : {
+      "name" : "email",
+      "label" : "Email",
+      "placeholder" : "homero.simpson@gmail.com",
+      "help" : "Tu email.",
+      "validation" : {
+        "required" : "Email requerido.",
+        "invalid" : "Email inválido."
+      }
+    },
+    "mobile" : {
+      "name" : "mobile",
+      "label" : "Móvil",
+      "placeholder" : "Móvil 10 dígitos",
+      "help" : "Tu móvil, 10 dígitos.",
+      "validation" : {
+        "required" : "Móvil requerido.",
+        "invalid" : "Móvil inválido.  Deben ser 10 dígitos."
+      }
+    },
+    "contact" : {
+      "name" : "contact",
+      "label" : "¿Cómo prefieres que te contactemos?",
+      "help" : "¿Cómo prefieres que te contactemos?",
+      "options" : {
+        "default" : "-- Contacto --",
+        "items" : [
+          { "label" : "Móvil", "value" : "Mobile"},
+          { "label" : "Email", "value" : "Email"},
+          { "label" : "WhatsApp", "value" : "WhatsApp"}
+        ]
+      },
+      "validation" : {
+        "required" : "Campo requerido."
+      }
+    },
+    "message" : {
+      "name" : "message",
+      "label" : "Mensaje",
+      "placeholder" : "¿Quieres darnos más información?",
+      "help" : "¿Quieres darnos más información?",
+      "validation" : {}
+    },
+    "submit" : {
+      "label"  : "Enviar"
+    }
+  }
+}

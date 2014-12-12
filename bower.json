@@ -1,0 +1,30 @@
+{
+  "name": "kiwi",
+  "version": "0.1.0",
+  "homepage": "https://github.com/juanmarinbear/kiwi",
+  "authors": [
+    "Juan Marin <juan@codecery.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular-latest": "~1.3.5",
+    "angular-animate": "~1.3.5",
+    "angular-resource": "~1.3.5",
+    "angular-sanitize": "~1.3.5",
+    "angular-ui-router": "~0.2.13",
+    "angular-loader": "~1.3.5",
+    "script.js": "~2.5.7",
+    "pure": "~0.5.0",
+    "ionicons": "~2.0.0",
+    "ng-file-upload": "~2.0.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.3.5",
+    "angular-scenario": "~1.3.5"
+  }
+}

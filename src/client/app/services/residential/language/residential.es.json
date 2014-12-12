@@ -1,0 +1,28 @@
+{
+  "title" : "Residencial",
+  "icon" : "ion-home",
+  "paragraphs" : [
+    "Disponible en edificios Kiwi Networks",
+    "Sin plan forzoso ni costo de instalación",
+    "Cancela sin penalización",
+    "Velocidad simétrica",
+    "Servicio best effort",
+    "DHCP con IP pública",
+    "50 Mbps a 1 Gbps (depende ubicación)"
+  ],
+  "pricing" : [
+    {
+      "price" : "$580 / mes"
+    }
+  ],
+  "buttons" : [
+    {
+      "title" : "¿Dudas?",
+      "href" : "/#/faq#residential"
+    }, 
+    {
+      "title" : "Contrata",
+      "href" : "/#/sales/residential"
+    } 
+  ]
+}

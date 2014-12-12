@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="no-js" data-ng-app="app" data-ng-controller="App as vm" ng-strict-di>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title data-ng-bind="app.getTitle()">Kiwi Networks</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=2, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="author" href="humans.txt">
+    <!--
+    // inject:css //
+    // endinject //
+    -->
+
+    <!-- clear:css -->
+    <link rel="stylesheet" href="/bower_components/pure/base.css">
+    <link rel="stylesheet" href="/bower_components/pure/grids.css">
+    <link rel="stylesheet" href="/bower_components/pure/grids-responsive.css">
+    <link rel="stylesheet" href="/bower_components/pure/forms.css">
+    <link rel="stylesheet" href="/bower_components/pure/buttons.css">
+    <link rel="stylesheet" href="/bower_components/ionicons/css/ionicons.css">
+    <link rel="stylesheet" href="/common/styles/main.css">
+    <link rel="stylesheet" href="/app/core/kwmenu/kwmenu.css">
+    <link rel="stylesheet" href="/app/core/kwcontent/kwcontent.css">
+    <link rel="stylesheet" href="/app/core/kwloading/kwloading.css">
+    <link rel="stylesheet" href="/app/core/kwticket/kwticket.css">
+    <!-- endinject -->
+
+    <!-- clear:js -->
+    <!-- Vendor -->
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/ng-file-upload/angular-file-upload.js"></script>
+    <!-- Bootstrapping -->
+    <script src="/app/app.module.js"></script>
+    <script src="/app/app.config.router.js"></script>
+    <script src="/app/app.controller.js"></script>
+    <!-- Core Module -->
+    <script src="/app/core/core.module.js"></script>
+    <script src="/app/core/template/template.factory.js"></script>
+    <script src="/app/core/parseheaders/parseheaders.factory.js"></script>
+    <script src="/app/core/parse/parse.factory.js"></script>
+    <script src="/app/core/mxpostapi/mxpostapi.factory.js"></script>
+    <script src="/app/core/kiwiwebapi/kiwiwebapi.factory.js"></script>
+    <script src="/app/core/mediaquery/mediaquery.factory.js"></script>
+    <script src="/app/core/capitalize/capitalize.filter.js"></script>
+    <script src="/app/core/kwmenu/kwmenu.directive.js"></script>
+    <script src="/app/core/kwcontent/kwcontent.directive.js"></script>
+    <script src="/app/core/kwloading/kwloading.directive.js"></script>
+    <script src="/app/core/kwticket/kwticket.directive.js"></script>
+    <script src="/app/core/vcenter/vcenter.directive.js"></script>
+    <!-- Home Module -->
+    <script src="/app/home/home.module.js"></script>
+    <script src="/app/home/home.config.router.js"></script>
+    <script src="/app/home/home.controller.js"></script>
+    <!-- Company Module -->
+    <script src="/app/company/company.module.js"></script>
+    <script src="/app/company/about/about.config.router.js"></script>
+    <script src="/app/company/about/about.controller.js"></script>
+    <script src="/app/company/apply/apply.config.router.js"></script>
+    <script src="/app/company/apply/apply.controller.js"></script>
+    <script src="/app/company/careers/careers.config.router.js"></script>
+    <script src="/app/company/careers/careers.controller.js"></script>
+    <script src="/app/company/concesion/concesion.config.router.js"></script>
+    <script src="/app/company/concesion/concesion.controller.js"></script>
+    <script src="/app/company/privacy/privacy.config.router.js"></script>
+    <script src="/app/company/privacy/privacy.controller.js"></script>
+    <script src="/app/company/stories/stories.config.router.js"></script>
+    <script src="/app/company/stories/stories.controller.js"></script>
+    <script src="/app/company/unsubscribe/unsubscribe.config.router.js"></script>
+    <script src="/app/company/unsubscribe/unsubscribe.controller.js"></script>
+    <!-- Services Module -->
+    <script src="/app/services/services.module.js"></script>
+    <script src="/app/services/services.config.router.js"></script>
+    <script src="/app/services/services.controller.js"></script>
+    <script src="/app/services/residential/residential.config.router.js"></script>
+    <script src="/app/services/residential/residential.controller.js"></script>
+    <script src="/app/services/business/business.config.router.js"></script>
+    <script src="/app/services/business/business.controller.js"></script>
+    <script src="/app/services/dedicated/dedicated.config.router.js"></script>
+    <script src="/app/services/dedicated/dedicated.controller.js"></script>
+    <script src="/app/services/metromesh/metromesh.config.router.js"></script>
+    <script src="/app/services/metromesh/metromesh.controller.js"></script>
+    <script src="/app/services/faq/faq.config.router.js"></script>
+    <script src="/app/services/faq/faq.controller.js"></script>
+    <script src="/app/services/sales/sales.config.router.js"></script>
+    <script src="/app/services/sales/sales.controller.js"></script>
+    <!-- Support Module -->
+    <script src="/app/support/support.module.js"></script>
+    <script src="/app/support/status/status.config.router.js"></script>
+    <script src="/app/support/status/status.controller.js"></script>
+    <script src="/app/support/support.config.router.js"></script>
+    <script src="/app/support/support.controller.js"></script>
+    <!-- Customer Module -->
+    <script src="/app/customer/customer.module.js"></script>
+    <script src="/app/customer/dashboard/dashboard.config.router.js"></script>
+    <script src="/app/customer/dashboard/dashboard.controller.js"></script>
+    <script src="/app/customer/refer/refer.config.router.js"></script>
+    <script src="/app/customer/refer/refer.controller.js"></script>
+    <script src="/app/customer/pay/pay.config.router.js"></script>
+    <script src="/app/customer/pay/pay.controller.js"></script>
+    <!-- Contact Module -->
+    <script src="/app/contact/contact.module.js"></script>
+    <script src="/app/contact/contact.config.router.js"></script>
+    <script src="/app/contact/contact.controller.js"></script>
+    <!-- endinject -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="kw-splash kw-appear" data-ng-hide="app.splash">
+      <div>
+        <h1>KIWI NETWORKS</h1>
+      </div>
+    </div>
+
+    <div class="kw-perspective"  data-ng-style="vm.section" kw-content nav="vm.menu" app="app" data-ng-cloak>
+      <div class="kw-page kw-page-current kw-landing">
+        <h1>INTERNET DE BANDA ANCHA</h1>
+        <h2>Sin plan forzoso ni costo de instalación</h2>
+        <h2>Desde 50 Mbps por $580 / mes</h2>
+        <div class="kw-button-group">
+          <div>
+            <a class="pure-button" href="/#/services">Conoce Más</a>
+          </div>
+          <div>
+            <a class="pure-button" href="/#/sales/">Contrata</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div kw-menu="vm.menu" active="vm.menu.active" data-ng-cloak></div>
+
+    <div kw-loading data-ng-cloak></div>
+
+    <div class="kw-appear kw-bg kw-bgimg" data-ng-show="app.section === 'home'" data-ng-cloak>
+      <video autoplay loop poster="/common/images/background.jpg">
+        <source src="/common/videos/videobackground.webm" type="video/webm">
+        <source src="/common/videos/videobackground.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="kw-appear kw-bg kw-bgimg-blurred" data-ng-hide="app.section === 'home'" data-ng-cloak>
+      <div id="bgimg" class="kw-bgimg-blurred">
+      </div>
+    </div>
+
+    <script>
+      // inject-angular-loader:js //
+      </script><script src="/bower_components/angular-loader/angular-loader.js"></script><script>
+      // endinject //
+
+      // inject-script:js //
+      </script><script src="/bower_components/script.js/dist/script.js"></script><script>
+      // endinject //
+
+      $script([
+        // inject:js //
+        // endinject //
+      ], 
+      function() {
+        //angular.bootstrap(document, ['app']);
+      });
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X');ga('send', 'pageview');
+    </script>
+  </body>
+</html>
