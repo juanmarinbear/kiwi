@@ -19,6 +19,7 @@
     vm.success = success;
     angular.extend(vm.ticket, {
       type: 'Unsubscribe',
+      channel: 'web_channel',
       unsubscribeEmail: false,
       unsubscribeMobile: false,
       unsubscribeAddress: false,
@@ -43,6 +44,12 @@
       });
     }
 
+    function capitalize(str) {
+      return str.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+    }
+
     function error() {
       $scope.$emit('startLoading');
       vm.animate.error = true;
@@ -57,6 +64,8 @@
     function submit(ticket) {
       if (vm.form.$valid) {
         $scope.$emit('startLoading');
+        vm.ticket.name = capitalize(vm.ticket.name);
+        vm.ticket.last = capitalize(vm.ticket.last);
         var unsubscribeTicket = new vm.UnsubscribeTicket(ticket);
         unsubscribeTicket.$save({class: vm.ticket.type})
         .then(
@@ -65,8 +74,6 @@
             .then(function(data) {
               angular.extend(vm.ticket, data);
               success();
-              $scope.$emit('stopLoading');
-              console.log(vm.ticket);
             });
           }, 
           function(data) {
@@ -78,7 +85,7 @@
     }
 
     function success() {
-      $scope.$emit('startLoading');
+      $scope.$emit('stopLoading');
       vm.animate.success = true;
       $timeout(function() {
         vm.animate.successTitle = true; 

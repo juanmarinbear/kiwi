@@ -79,7 +79,7 @@
         {
           "question": "¿Qué especificaciones tiene el router que me entregan?",
           "answer": [
-            "<a href='/media/docs/UniFi_Security_Gateway_DS.pdf' target='_blank'>Estas.</a>"
+            "<a href='/common/docs/UniFi_Security_Gateway_DS.pdf' target='_blank'>Estas.</a>"
           ]
         },
         {
@@ -109,7 +109,7 @@
         {
           "question": "¿Cómo cancelo?",
           "answer": [
-            "Entra al <a href='/#/dashboard/anon' target='_blank'>Dashboard</a>, selecciona la pestaña de \"Cancelar\" y llena la forma."
+            "Entra al <a href='/#/dashboard' target='_blank'>Dashboard</a>, selecciona la pestaña de \"Cancelar\" y llena la forma."
           ]
         },
         {
@@ -163,7 +163,7 @@
         {
           "question": "¿Y si no vivo en un edificio con Kiwi Networks instalado?",
           "answer": [
-            "Conseguir a 5 vecinos que quieran el servicio y darnos el contacto de la administración de tu edificio.  <a href='/#/builtin' target='_blank'>Usa esta forma para hacerlo</a>.  Por cierto, si consigues 5 vecinos, tu servicio es gratis."
+            "Conseguir a 5 vecinos que quieran el servicio y darnos el contacto de la administración de tu edificio.  <a href='/#/sales/residential' target='_blank'>Usa esta forma para hacerlo</a>.  Por cierto, si consigues 5 vecinos, tu servicio es gratis."
           ]
         },
         {
@@ -223,7 +223,7 @@
         {
           "question": "¿Cuál es la diferencia entre On-Net y Off-Net?",
           "answer": [
-            "On-Net son edificios conectados a la red Kiwi Networks.  Off-Net son edificios o ubicaciones sin conexión a la red Kiwi Networks."
+            "On-Net son edificios con más de un cliente Kiwi Networks.  Off-Net son edificios o ubicaciones sólo un cliente Kiwi Networks.  Así que si tienes un servicio Off-Net, convence a tu vecino para que contrate y reduce lo que pagas a la mitad."
           ]
         },
         {

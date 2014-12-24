@@ -19,6 +19,7 @@
     vm.ticket = {};
     angular.extend(vm.ticket, {
       type: 'Technical',
+      channel: 'web_channel',
     });
     vm.updateType = updateType;
 
@@ -42,6 +43,12 @@
       });
     }
 
+    function capitalize(str) {
+      return str.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      });
+    }
+
     function error() {
       $scope.$emit('stopLoading');
       vm.animate.error = true;
@@ -56,6 +63,11 @@
     function submit(ticket) {
       if (vm.form.$valid) {
         $scope.$emit('startLoading');
+        vm.ticket.name = capitalize(vm.ticket.name);
+        vm.ticket.last = capitalize(vm.ticket.last);
+        if(vm.ticket.company) {
+          vm.ticket.company = capitalize(vm.ticket.company);
+        }
         var supportTicket = new vm.SupportTicket(ticket);
         supportTicket.$save({class: vm.ticket.type})
         .then(
@@ -64,7 +76,6 @@
             .then(function(data) {
               angular.extend(vm.ticket, data);
               success();
-              console.log(vm.ticket);
             });
           }, 
           function(data) {

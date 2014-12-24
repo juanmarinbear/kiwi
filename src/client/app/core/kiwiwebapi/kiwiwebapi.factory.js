@@ -5,10 +5,10 @@
   .module('app.core')
   .factory('kiwiwebapi', kiwiwebapi);
 
-  kiwiwebapi.$inject = ['$resource', 'parseheaders', 'parse'];
+  kiwiwebapi.$inject = ['parseheaders', 'parse'];
 
   /* @ngInject */
-  function kiwiwebapi($resource, parseheaders, parse) {
+  function kiwiwebapi(parseheaders, parse) {
 
     var factory = {
       newKiwiWebResource: newKiwiWebResource

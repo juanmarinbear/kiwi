@@ -18,8 +18,8 @@
       },
       kiwiwebapi: {
         'Content-Type': 'application/json',
-        'X-Parse-Application-Id': 'FH9ImcjJr5PWoumZrDbbahRTqSLtgoP3FHmrOIpZ',
-        'X-Parse-REST-API-Key': 's8B22ec8itvsi8O0AVmVhM0isGr4p5pbjlP3ZDJG'
+        'X-Parse-Application-Id': 'uV1p4HVboKFhgVIVU8kEZH223EXVLLrNoCiZ9ubw',
+        'X-Parse-REST-API-Key': 'rIDFytzlYaGyrdYVPHn62SVNgvIEDdcyhbAxbAmm'
       }
     };
   }

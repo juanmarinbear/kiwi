@@ -11,15 +11,6 @@
       ]
     },
     {
-      "title" : "Teléfono",
-      "subtitle" : "Llámanos a:",
-      "icon" : "ion-iphone",
-      "paragraphs" : [
-        "México:",
-        "Estados Unidos:"
-      ]
-    },
-    {
       "title" : "Email",
       "subtitle" : "Escríbenos a:",
       "icon" : "ion-email",
@@ -37,6 +28,14 @@
         "Facebook: <a href=\"https://www.facebook.com/KiwiNetworks\" target=\"_blank\">KiwiNetworks</a>",
         "Twitter: <a href=\"https://twitter.com/KiwiNetworks\" target=\"_blank\">@kiwinetworks</a>"
       ]
+    },
+    {
+      "title" : "Teléfono",
+      "subtitle" : "Llámanos a:",
+      "icon" : "ion-iphone",
+      "paragraphs" : [
+        "México: <a href=\"tel:018006819244\">01-800-681-9244</a>."
+      ]
     }
   ],
   "paragraphs": [
@@ -48,7 +47,7 @@
       "paragraphs": [
         "Recibimos tu solicitud.",
         "Un representante de Kiwi Networks te contactará dentro de los próximos 15 minutos en horario laboral (L a V, 8:00 a 18:00) o temprano el siguiente día hábil.",
-        "Si esto no sucede, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+        "Si esto no sucede, llámanos al <a href=\"tel:018006819244\">01-800-681-9244</a>."
       ]
     },
     "error": {
@@ -56,7 +55,7 @@
       "paragraphs": [
         "Ocurrió un error.",
         "Te pedimos intentes nuevamente.",
-        "Si el problema persiste, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+        "Si el problema persiste, llámanos al <a href=\"tel:018006819244\">01-800-681-9244</a>."
       ]
     }
   }

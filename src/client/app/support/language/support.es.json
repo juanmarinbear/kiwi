@@ -6,7 +6,7 @@
       "icon" : "ion-social-whatsapp-outline",
       "paragraphs" : [
         "Búscanos por WhatsApp para levantar tickets de soporte.",
-        "Nuestro número es: +52 1 55 6245 2800.",
+        "Nuestro número es: <a href=\"tel:+5215562452800\">+52-1-55-6245-2800</a>.",
         "Si quieres llamarnos, no uses este numero, usa nuestros números en México y Estados Unidos."
       ]
     },
@@ -30,8 +30,7 @@
       "title" : "Teléfono",
       "icon" : "ion-iphone",
       "paragraphs" : [
-        "México:",
-        "Estados Unidos:"
+        "México: <a href=\"tel:018006819244\">01-800-681-9244</a>."
       ]
     }
   ],
@@ -47,7 +46,7 @@
       "paragraphs": [
         "Recibimos tu solicitud.",
         "Un representante de Kiwi Networks te contactará dentro de los próximos 15 minutos en horario laboral (L a V, 8:00 a 18:00) o temprano el siguiente día hábil.",
-        "Si esto no sucede, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+        "Si esto no sucede, llámanos al <a href=\"tel:018006819244\">01-800-681-9244</a>."
       ]
     },
     "error": {
@@ -55,7 +54,7 @@
       "paragraphs": [
         "Ocurrió un error.",
         "Te pedimos intentes nuevamente.",
-        "Si el problema persiste, llámanos al <a href=\"tel:018006819244\">01 800 681 9244</a>."
+        "Si el problema persiste, llámanos al <a href=\"tel:018006819244\">01-800-681-9244</a>."
       ]
     }
   }
