@@ -35,7 +35,8 @@ module.exports = {
           { id: zendeskFields.number, value: ticket.number },
           { id: zendeskFields.apt, value: ticket.apt },
           { id: zendeskFields.building, value: ticket.building },
-          { id: zendeskFields.levels, value: ticket.levels }
+          { id: zendeskFields.levels, value: ticket.levels },
+          { id: zendeskFields.channel, value: ticket.channel }
         ]
       }
     }
@@ -56,9 +57,10 @@ module.exports = {
         ticket_form_id: zendeskFields.technical,
         custom_fields: [
           { id: zendeskFields.technicalSubject, value: ticket.subject == 'Otro' ? 'technical_other' : foldToASCII(ticket.subject).replace(/\s/g, '_').toLowerCase() },
-          { id: zendeskFields.company, value: ticket.company},
+          { id: zendeskFields.company, value: ticket.company },
           { id: zendeskFields.service, value: foldToASCII(ticket.service).replace(/\s/g, '_').toLowerCase() },
-          { id: zendeskFields.contact, value: ticket.contact }
+          { id: zendeskFields.contact, value: ticket.contact },
+          { id: zendeskFields.channel, value: ticket.channel }
         ]
       } 
     }
@@ -80,7 +82,8 @@ module.exports = {
         custom_fields: [
           { id: zendeskFields.company, value: ticket.company},
           { id: zendeskFields.service, value: foldToASCII(ticket.service).replace(/\s/g, '_').toLowerCase() },
-          { id: zendeskFields.contact, value: ticket.contact }
+          { id: zendeskFields.contact, value: ticket.contact },
+          { id: zendeskFields.channel, value: ticket.channel }
         ]
       }
     }
@@ -101,8 +104,9 @@ module.exports = {
         ticket_form_id: zendeskFields.contactForm,
         custom_fields: [
           { id: zendeskFields.contactSubject, value: ticket.subject == 'Otro' ? 'contact_other' : foldToASCII(ticket.subject).replace(/\s/g, '_').toLowerCase() },
-          { id: zendeskFields.company, value: ticket.company},
-          { id: zendeskFields.contact, value: ticket.contact }
+          { id: zendeskFields.company, value: ticket.company },
+          { id: zendeskFields.contact, value: ticket.contact },
+          { id: zendeskFields.channel, value: ticket.channel }
         ]
       }
     }
@@ -133,7 +137,8 @@ module.exports = {
           { id: zendeskFields.phd, value: ticket.phd },
           { id: zendeskFields.phdUrl, value: ticket.phdUrl },
           { id: zendeskFields.experience, value: ticket.experience },
-          { id: zendeskFields.resume, value: ticket.resume.url }
+          { id: zendeskFields.resume, value: ticket.resume.url },
+          { id: zendeskFields.channel, value: ticket.channel }
         ]
       } 
     }
@@ -157,7 +162,8 @@ module.exports = {
           { id: zendeskFields.unsubscribeMobile, value: ticket.unsubscribeMobile},
           { id: zendeskFields.unsubscribeAddress, value: ticket.unsubscribeAddress},
           { id: zendeskFields.opposeTransfer, value: ticket.opposeTransfer},
-          { id: zendeskFields.forgetMe, value: ticket.forgetMe }
+          { id: zendeskFields.forgetMe, value: ticket.forgetMe },
+          { id: zendeskFields.channel, value: ticket.channel }
         ]
       } 
     }

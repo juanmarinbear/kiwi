@@ -30,6 +30,7 @@
     vm.ticket = {};
     angular.extend(vm.ticket, {
       type: 'Jobs',
+      channel: 'web_channel',
     });
 
     activate();
@@ -49,6 +50,12 @@
         if ($stateParams.role) {
           vm.ticket.role = vm.roles[$stateParams.role];
         }
+      });
+    }
+
+    function capitalize(str) {
+      return str.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
       });
     }
 
@@ -95,6 +102,17 @@
               name: result.data.name,
               url: result.data.url
             };
+            vm.ticket.name = capitalize(vm.ticket.name);
+            vm.ticket.last = capitalize(vm.ticket.last);
+            if(vm.ticket.college) {
+              vm.ticket.college = capitalize(vm.ticket.college);
+            }
+            if(vm.ticket.masters) {
+              vm.ticket.masters = capitalize(vm.ticket.masters);
+            }
+            if(vm.ticket.phd) {
+              vm.ticket.phd = capitalize(vm.ticket.phd);
+            }
             var applyTicket = new vm.ApplyTicket(ticket);
             applyTicket.$save({class: vm.ticket.type})
             .then(
@@ -103,7 +121,6 @@
                 .then(function(data) {
                   angular.extend(vm.ticket, data);
                   success();
-                  console.log(vm.ticket);
                 });
               }, 
               function(data) {

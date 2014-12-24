@@ -1,5 +1,5 @@
 {
-  "title" : "Dashboard",
+  "title" : "Dashboard (Proximamente)",
   "sections" : [
     {
       "title" : "Cuenta",
@@ -12,7 +12,7 @@
     },
     {
       "title" : "Kiwi Cloud",
-      "icon" : "ion-ionic",
+      "icon" : "ion-kiwi",
       "paragraphs" : [
         "Consulta el estado actual e historial de tu enlace.",
         "Consulta tu velocidad promedio hacia Kiwi Networks y AWS.",

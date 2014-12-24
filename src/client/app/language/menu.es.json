@@ -70,11 +70,6 @@
           "href": "/#/careers"
         },
         {
-          "name": "stories",
-          "label": "Casos de Éxito",
-          "href": "/#/stories"
-        },
-        {
           "name": "privacy",
           "label": "Privacidad",
           "href": "/#/privacy"
@@ -90,16 +85,6 @@
           "name": "dashboard",
           "label": "Dashboard",
           "href": "/#/dashboard"
-        },
-        {
-          "name": "pay",
-          "label": "Paga",
-          "href": "/#/pay"
-        },
-        {
-          "name": "refer",
-          "label": "Recomienda",
-          "href": "/#/refer"
         }
       ]
     },
@@ -118,11 +103,6 @@
           "label": "Help Center",
           "href": "http://support.kiwinetworks.com",
           "target": "_blank"
-        },
-        {
-          "name": "status",
-          "label": "Status",
-          "href": "/#/status"
         }
       ]
     },

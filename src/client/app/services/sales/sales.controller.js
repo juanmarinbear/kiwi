@@ -24,6 +24,7 @@
     vm.ticket = {};
     angular.extend(vm.ticket, {
       type: 'Sales',
+      channel: 'web_channel',
       step: 'Lead',
       outcome: 'Open',
       levels: '2'
@@ -55,6 +56,12 @@
             vm.ticket.service = $filter('capitalize')($stateParams.service);
           }
         }
+      });
+    }
+
+    function capitalize(str) {
+      return str.replace(/\w\S*/g, function(txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
       });
     }
 
@@ -141,6 +148,11 @@
     function submit(ticket) {
       if (vm.form.$valid) {
         $scope.$emit('startLoading');
+        vm.ticket.name = capitalize(vm.ticket.name);
+        vm.ticket.last = capitalize(vm.ticket.last);
+        if(vm.ticket.company) {
+          vm.ticket.company = capitalize(vm.ticket.company);
+        }
         var salesTicket = new vm.SalesTicket(ticket);
         salesTicket.$save({class: vm.ticket.type})
         .then(
@@ -149,7 +161,6 @@
             .then(function(data) {
               angular.extend(vm.ticket, data);
               success();
-              console.log(vm.ticket);
             });
           }, 
           function(data) {
