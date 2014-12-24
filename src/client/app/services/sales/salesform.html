@@ -80,7 +80,7 @@
     </div>
     <div class="pure-u-1">
       <label for="{{vm.inputs.apt.name}}" data-ng-bind="vm.inputs.apt.label"></label>
-      <input type="text" name="apt" placeholder="{{vm.inputs.number.placeholder}}" data-ng-model="vm.ticket.apt">
+      <input type="text" name="apt" placeholder="{{vm.inputs.apt.placeholder}}" data-ng-model="vm.ticket.apt">
     </div>
     <div class="pure-u-1">
       <label for="{{vm.inputs.building.name}}" data-ng-bind="vm.inputs.building.labelResidential" data-ng-show="(vm.ticket.service == 'Residential') && !(vm.form.building.$dirty && vm.form.building.$error.required)"></label>
