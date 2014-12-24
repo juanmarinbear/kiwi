@@ -25,7 +25,8 @@
     angular.extend(vm.ticket, {
       type: 'Sales',
       step: 'Lead',
-      outcome: 'Open'
+      outcome: 'Open',
+      levels: '2'
     });
 
     activate();
