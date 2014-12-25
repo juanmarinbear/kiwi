@@ -65,7 +65,7 @@
         $scope.$emit('startLoading');
         vm.ticket.name = capitalize(vm.ticket.name);
         vm.ticket.last = capitalize(vm.ticket.last);
-        if(vm.ticket.company) {
+        if (vm.ticket.company) {
           vm.ticket.company = capitalize(vm.ticket.company);
         }
         var supportTicket = new vm.SupportTicket(ticket);

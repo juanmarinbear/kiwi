@@ -104,13 +104,13 @@
             };
             vm.ticket.name = capitalize(vm.ticket.name);
             vm.ticket.last = capitalize(vm.ticket.last);
-            if(vm.ticket.college) {
+            if (vm.ticket.college) {
               vm.ticket.college = capitalize(vm.ticket.college);
             }
-            if(vm.ticket.masters) {
+            if (vm.ticket.masters) {
               vm.ticket.masters = capitalize(vm.ticket.masters);
             }
-            if(vm.ticket.phd) {
+            if (vm.ticket.phd) {
               vm.ticket.phd = capitalize(vm.ticket.phd);
             }
             var applyTicket = new vm.ApplyTicket(ticket);
@@ -131,7 +131,7 @@
           },
           function(data) {
             error();
-            console.log(data)
+            console.log(data);
           }
         );
       }
