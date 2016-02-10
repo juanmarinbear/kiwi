@@ -1,0 +1,13 @@
+<div class="pure-g">
+  <div class="pure-u-1">
+    <h1 data-ng-bind="vm.text.title"></h1>
+  </div>
+  <div class="pure-u-1 kw-index" data-ng-repeat="term in vm.text.terms">
+    <h2 data-ng-bind="term.title"></h2>
+    <h3 data-ng-bind="term.subtitle"></h3>
+    <div data-ng-repeat="section in term.sections">
+      <h3 data-ng-bind="section.title"></h3>
+      <p data-ng-repeat="paragraph in section.paragraphs" data-ng-bind-html="paragraph"></p>
+    </div>
+  </div>
+</div>

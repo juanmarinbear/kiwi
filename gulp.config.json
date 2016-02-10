@@ -18,7 +18,7 @@
     "src/client/bower_components/pure/grids-responsive-min.css",
     "src/client/bower_components/pure/forms-min.css",
     "src/client/bower_components/pure/buttons-min.css",
-    "src/client/bower_components/ionicons/css/ionicons.min.css"
+    "src/client/bower_components/ionicons/css/ionicons.css"
   ],
   "vendorCssMaps": [
     "src/client/bower_components/ionicons/css/ionicons.min.css.map"
