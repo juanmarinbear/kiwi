@@ -397,8 +397,15 @@ a {
   position: fixed;
   display: inline-block;
   bottom: 20px;
-  right: 20px;
+  right: 40px;
+  padding: 5px 10px;
   z-index: 3;
   font-size: 14px;
   color: #FFF;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+a, a:active, a:hover, a:focus{
+  outline:0;
 }
