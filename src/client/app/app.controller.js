@@ -19,7 +19,8 @@
       setTitle: setTitle,
       splash: false,
       title: '',
-      section: 'home'
+      section: 'home',
+      'justiceText': null
     };
 
     activate();
@@ -29,6 +30,7 @@
       template.get('app/language/menu.es.json')
       .then(function(result) {
         vm.menu = result;
+        $scope.app.justiceText = result.justiceText;
         $scope.app.setTitle('Kiwi Networks');
         $timeout(function() {
           toggleSplash();
