@@ -9,6 +9,10 @@ body, html {
   height: 100%;
   overflow: hidden;
 }
+/*Added by: JCCanizal*/
+a, a:active, a:hover, a:focus{
+  outline:0 !important;
+}
 
 [ng-cloak],
 [ng-hide] {
@@ -404,8 +408,4 @@ a {
   color: #FFF;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.5);
-}
-
-a, a:active, a:hover, a:focus{
-  outline:0;
 }

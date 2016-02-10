@@ -3,18 +3,17 @@
 
   angular
   .module('app.company')
-  .controller('Justice', Justice);
+  .controller('Security', Security);
 
-  Justice.$inject = ['$scope', 'template'];
+  Security.$inject = ['$scope', 'template'];
 
-  function Justice($scope, template) {
+  function Security($scope, template) {
     var vm = this;
 
     activate();
 
     function activate() {
-      console.log('Activating Justice Controller');
-      template.get('app/company/justice/language/justice.es.json')
+      template.get('app/company/security/language/security.es.json')
       .then(function(result) {
         vm.text = result;
         $scope.app.setTitle(vm.text.title);

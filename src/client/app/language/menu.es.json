@@ -1,6 +1,6 @@
 {
   "title": "Kiwi",
-  "justiceText": "<a href='/#/serguridad-y-justicia'>Colaboración con la Justicia: legal@kiwinetworks.com</a>",
+  "justiceText": "<a href='/#/security'>Colaboración con la Justicia: legal@kiwinetworks.com</a>",
   "sections": [
     {
       "name": "services",
@@ -41,6 +41,11 @@
           "name": "sales",
           "label": "Contrata",
           "href": "/#/sales/"
+        },
+        {
+          "name": "security",
+          "label": "Seguridad",
+          "href": "/#/security"
         }
       ]
     },

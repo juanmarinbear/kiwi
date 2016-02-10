@@ -9,11 +9,11 @@
 
   function config($stateProvider) {
 
-    var justice = {
-      name: 'justice',
-      url: '/serguridad-y-justicia',
+    var security = {
+      name: 'security',
+      url: '/security',
       templateProvider: template,
-      controller: 'Justice',
+      controller: 'Security',
       controllerAs: 'vm'
     };
 
@@ -21,11 +21,11 @@
 
     function template($timeout) {
       return $timeout(function() {
-        return '<div data-ng-include=\"\'app/company/justice/justice.html\'\"</div>';
+        return '<div data-ng-include=\"\'app/company/security/security.html\'\"</div>';
       });
     }
 
-    $stateProvider.state(justice);
+    $stateProvider.state(security);
   
   }
 
