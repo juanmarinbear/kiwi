@@ -392,3 +392,13 @@ a {
   background-color: #333;
 }
 
+/*Added by: JCCanizal*/
+#justice{
+  position: fixed;
+  display: inline-block;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+  font-size: 14px;
+  color: #FFF;
+}

@@ -18,6 +18,8 @@
       .then(function(result) {
         vm.text = result;
         $scope.app.setTitle(vm.text.title);
+        //Added by: JCCanizal
+        $scope.app.justiceText = vm.text.justice;
       }); // Loads text files.
     }
   }
